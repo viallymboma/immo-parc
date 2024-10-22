@@ -1,12 +1,13 @@
-import ECommerce from "@/components/Dashboard/E-commerce";
-import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLaout";
-import React from "react";
+import React from 'react';
+
+import { Metadata } from 'next';
+
+import ECommerce from '@/components/Dashboard/E-commerce';
 
 export const metadata: Metadata = {
   title:
-    "Next.js E-commerce Dashboard Page | NextAdmin - Next.js Dashboard Kit",
-  description: "This is Next.js Home page for NextAdmin Dashboard Kit",
+    "Plateforme de business et d'investissement",
+  description: "Cette Plateforme donne une opportunite de mettre sur pied un plan d'investissement a long term securise et fiable",
 };
 
 export default function Home() {
