@@ -1,7 +1,9 @@
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import ClickOutside from "@/components/ClickOutside";
+import { useState } from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import ClickOutside from '@/components/ClickOutside';
 
 const DropdownUser = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -72,10 +74,10 @@ const DropdownUser = () => {
 
             <span className="block">
               <span className="block font-medium text-dark dark:text-white">
-                Jhon Smith
+                Henry Boss
               </span>
               <span className="block font-medium text-dark-5 dark:text-dark-6">
-                jonson@nextadmin.com
+                henryn@immo-parc.com
               </span>
             </span>
           </div>
