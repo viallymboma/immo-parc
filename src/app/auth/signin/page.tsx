@@ -1,13 +1,15 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLaout";
-import Signin from "@/components/Auth/Signin";
+import React from 'react';
+
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import Signin from '@/components/Auth/Signin';
+import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb';
+import DefaultLayout from '@/components/Layouts/DefaultLaout';
 
 export const metadata: Metadata = {
-  title: "Next.js Login Page | NextAdmin - Next.js Dashboard Kit",
+  title: "Immo-parc Login Page | NextAdmin - Next.js Dashboard Kit",
   description: "This is Next.js Login Page NextAdmin Dashboard Kit",
 };
 

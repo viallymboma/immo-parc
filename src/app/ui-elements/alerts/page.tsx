@@ -1,12 +1,13 @@
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLaout";
-import AlertError from "@/components/Alerts/AlertError";
-import AlertWarning from "@/components/Alerts/AlertWarning";
-import AlertSuccess from "@/components/Alerts/AlertSuccess";
+import { Metadata } from 'next';
+
+import AlertError from '@/components/Alerts/AlertError';
+import AlertSuccess from '@/components/Alerts/AlertSuccess';
+import AlertWarning from '@/components/Alerts/AlertWarning';
+import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb';
+import DefaultLayout from '@/components/Layouts/DefaultLaout';
 
 export const metadata: Metadata = {
-  title: "Next.js Alerts Page | NextAdmin - Next.js Dashboard Kit",
+  title: "Immo-parc Alerts Page | NextAdmin - Next.js Dashboard Kit",
   description: "This is Next.js Alerts page for NextAdmin Dashboard Kit",
   // other metadata
 };
