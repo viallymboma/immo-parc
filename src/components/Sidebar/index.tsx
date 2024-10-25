@@ -1,14 +1,23 @@
 "use client";
 
-import React from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
-import SidebarItem from "@/components/Sidebar/SidebarItem";
-import ClickOutside from "@/components/ClickOutside";
-import useLocalStorage from "@/hooks/useLocalStorage";
-import { CalendarSvgIcon, ChartsSvgIcon, DashboardSvgIcon, FormsSvgIcon, GoldenLongVersion, HamburgerMenuSvgIcon, LogoutSvgIcon, PagesSvgIcon, ProfileSvgIcon, TablesSvgIcon, UIELementsSvgIcon } from "../svgs/SvgIcons";
-import LanguageSwitcher from "../LanguageSwitcher";
+import React from 'react';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+import ClickOutside from '@/components/ClickOutside';
+import SidebarItem from '@/components/Sidebar/SidebarItem';
+import useLocalStorage from '@/hooks/useLocalStorage';
+
+import {
+  CalendarSvgIcon,
+  DashboardSvgIcon,
+  FormsSvgIcon,
+  GoldenLongVersion,
+  HamburgerMenuSvgIcon,
+  ProfileSvgIcon,
+  TablesSvgIcon,
+} from '../svgs/SvgIcons';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -24,7 +33,7 @@ const menuGroups = [
           <DashboardSvgIcon />
         ),
         label: "Tableau de Bord",
-        route: "#",
+        route: "/",
         // children: [
         //   { label: "eCommerce", route: "/" },
         // ],
@@ -34,7 +43,7 @@ const menuGroups = [
           <CalendarSvgIcon />
         ),
         label: "Commissions",
-        route: "/calendar",
+        route: "/commissions",
       },
       {
         icon: (
@@ -56,9 +65,9 @@ const menuGroups = [
         route: "#",
         children: [
           // { label: "Tables", route: "/tables" },
-          { label: "Commissions", route: "/commissions" },
-          { label: "Withdrawals", route: "/withdrawal" },
-          { label: "Investissements", route: "/invest" },
+          { label: "Commissions", route: "/transactions/commissions" },
+          { label: "Withdrawals", route: "/transactions/withdrawals" },
+          { label: "Investissements", route: "/transactions/investments" },
         ],
       },
 
