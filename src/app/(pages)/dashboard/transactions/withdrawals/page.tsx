@@ -1,8 +1,12 @@
 import React from 'react';
 
+import WithdrawalModule from './_components/WithdrawalModule';
+
 const WithdrawalPage = () => {
   return (
-    <div>WithdrawalPage</div>
+    <div>
+      <WithdrawalModule />
+    </div>
   )
 }
 

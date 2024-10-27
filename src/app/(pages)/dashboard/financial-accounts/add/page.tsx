@@ -10,6 +10,7 @@ import { accounts } from '@/components/data/Productsdata';
 import InputField from '@/components/FormElements/InputElement/InputField';
 import SelectField
   from '@/components/FormElements/InputElement/SelectInputField';
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
 import { PhoneSvgIcon } from '@/components/svgs/SvgIcons';
 
 type SignupFormType = {
@@ -35,9 +36,11 @@ const AddFinancialAccount = () => {
     }
     return (
         <div>
-            <div>
-                <h1>Ajouter un Compte</h1>
-            </div>
+            <ReturnHeader 
+                headerName='Ajouter un Compte'
+                returnBtnLabel='Retour'
+                returnLink='/dashboard/financial-accounts'
+            />
             <form onSubmit={handleSubmit (onSubmit)}>
                 <InputField 
                     label='Numéro de téléphone'

@@ -8,55 +8,42 @@ import {
   AccountType,
   my_accounts,
 } from '@/components/data/Productsdata';
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
 import {
+  AddSvgIcon,
   CloseSvgIcon,
   EditAccountSvgIcon,
 } from '@/components/svgs/SvgIcons';
 
-// type AccountType = {
-//     operator: string, 
-//     service: string, 
-//     abreviation: string, 
-//     balance?: number, 
-//     phone_number: number
-// }
-
-// const my_accounts: AccountType [] = [
-//     {
-//         operator: "Orange", 
-//         service: "Orange Money", 
-//         abreviation: "OM", 
-//         balance: 50000, 
-//         phone_number: 237695500474
-//     }, 
-//     {
-//         operator: "MTN", 
-//         service: "Mobile Money", 
-//         abreviation: "MoMo", 
-//         balance: 60000, 
-//         phone_number: 237675500474
-//     }
-// ]
-
 const MyFinancialAccountPage = () => {
+    const deleteAccount = (id: string | number, element: AccountType) => {
+        let confirmAction = confirm (`Êtes-vous sûr de vouloir supprimer ce compte ${ element?.service } / ${ element?.phone_number }?`)
+        if (confirmAction) {
+            // delete action
+            alert ("Supprimé avec succès")
+        } else {
+            alert ("Vous avez annulé la suppression")
+            return null
+        }
+    }
     return (
         <div className='flex flex-col gap-3'>
-            {/* <div className='flex px-4 py-6 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700 flex-row shadow-5 rounded-3xl'>
-                <div className='flex justify-center rounded-3xl overflow-hidden w-[50px]'>
-                    <Image src={ IconImage } className='w-full' alt='image' />
-                </div>
-                <div>
-                    <h1 className='text-white dark:text-black'>695500474</h1>
-                    <p>VIP 0</p>
-                </div>
-            </div> */}
+            <ReturnHeader 
+                headerName='Mes Comptes Financiers'
+                returnBtnLabel='Retour'
+                returnLink='/dashboard'
+            />
             <div className='flex flex-col gap-3 '>
                 {
                     my_accounts?.map((element: AccountType) => {
                         return (
                             <div className='flex px-4 py-6 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700 flex-col shadow-5 rounded-3xl'>
-                                <div className='flex justify-end rounded-3xl overflow-hidden w-full'>
-                                    {/* <Image src={ IconImage } className='w-full' alt='image' /> */}
+                                <div 
+                                    onClick={ () => {
+                                        deleteAccount (element?.id!, element)
+                                    } }
+                                    className='flex justify-end rounded-3xl overflow-hidden w-full'
+                                >
                                     <CloseSvgIcon color='#ffff' />
                                 </div>
                                 <div>
@@ -73,6 +60,18 @@ const MyFinancialAccountPage = () => {
                         )
                     })
                 }
+            </div>
+            <div className="mb-4.5">
+                <Link
+                    href={"/dashboard/financial-accounts/add"}
+                    type="submit"
+                    className="flex flex-row justify-center gap-3 w-full cursor-pointer items-center rounded-lg bg-primary p-4 font-medium text-white transition hover:bg-opacity-90"
+                >
+                    <AddSvgIcon color='#fff' />
+                    <span>
+                        Ajouter un compte
+                    </span>
+                </Link>
             </div>
         </div>
     )

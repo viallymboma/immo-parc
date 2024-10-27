@@ -11,10 +11,8 @@ import { accounts } from '@/components/data/Productsdata';
 import InputField from '@/components/FormElements/InputElement/InputField';
 import SelectField
   from '@/components/FormElements/InputElement/SelectInputField';
-import {
-  BackArrowSvgIcon,
-  PhoneSvgIcon,
-} from '@/components/svgs/SvgIcons';
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
+import { PhoneSvgIcon } from '@/components/svgs/SvgIcons';
 
 type SignupFormType = {
     operator: string, 
@@ -42,21 +40,13 @@ const ModifyFinancialAccount = () => {
     // handling
     }
     return (
-        <div>
-            <div className='flex flex-row justify-between items-center'>
-                <button
-                    className='rounded-full py-1 px-3 border-2 border-gray-5 flex justify-between items-center'
-                    onClick={() => {
-                        router.back ()
-                    }}
-                >
-                    <BackArrowSvgIcon />
-                    <span>
-                        Retour
-                    </span>
-                </button>
-                <h1>Modifier Compte</h1>
-            </div>
+        <div className='flex flex-col gap-3'>
+            <ReturnHeader 
+                headerName='Modifier Compte'
+                returnBtnLabel='Retour'
+                returnLink='/dashboard/financial-accounts'
+                headerNameStye="text-[20px] dark:text-white font-bold text-black"
+            />
             <form onSubmit={handleSubmit (onSubmit)}>
             {/* pattern: /^6(9|7|6|5|2|8)[0-9]{7}$/, */}
                 <InputField 
