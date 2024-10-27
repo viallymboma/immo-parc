@@ -1,8 +1,14 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { CameraSvgIcon, EditSvgIcon, FacebookSvgIcon } from "../svgs/SvgIcons";
+import React from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import {
+  CameraSvgIcon,
+  EditSvgIcon,
+  FacebookSvgIcon,
+} from '../svgs/SvgIcons';
 
 const ProfileBox = () => {
   return (
@@ -22,7 +28,7 @@ const ProfileBox = () => {
           />
           <div className="absolute bottom-1 right-1 z-10 xsm:bottom-4 xsm:right-4">
             <Link
-              href={'/pages/settings'}
+              href={'/dashboard/settings'}
               // htmlFor="cover"
               className="flex cursor-pointer items-center justify-center gap-2 rounded-[3px] bg-primary px-[15px] py-[5px] text-body-sm font-medium text-white hover:bg-opacity-90"
             >

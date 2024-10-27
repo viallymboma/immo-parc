@@ -43,7 +43,7 @@ const bottomNavElement: BottomElemenetType [] = [
             <SettingSvgIcon />
         ), 
         tooltip: "Mon compte", 
-        route: "/dashboard/settings"
+        route: "/dashboard/my-account"
     }
 ]
 

@@ -756,7 +756,39 @@ export const Dashboard2SvgIcon: React.FC<SVGComponentType> = ({ height, width, c
 
 
 
+export const ChevronRightSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.9 7.94L15.52 10.56C16.29 11.33 16.29 12.59 15.52 13.36L9 19.87" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9 4.03998L10.04 5.07998" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  );
+};
 
+
+export const CloseSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9902 10.0099L14.8302 9.16992" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9.16992 14.8301L11.9199 12.0801" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.8299 14.8299L9.16992 9.16992" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4 6C2.75 7.67 2 9.75 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C10.57 2 9.2 2.3 7.97 2.85" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  );
+};
+
+
+
+export const EditAccountSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.3701 10.17L18.7101 8.74999C20.1301 7.24999 20.7701 5.53999 18.5601 3.44999C16.3501 1.36999 14.6801 2.09999 13.2601 3.59999L5.0501 12.29C4.7401 12.62 4.4401 13.27 4.3801 13.72L4.0101 16.96C3.8801 18.13 4.7201 18.93 5.8801 18.73L9.1001 18.18C9.5501 18.1 10.1801 17.77 10.4901 17.43L14.4401 13.25" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.8899 5.04999C12.3199 7.80999 14.5599 9.91999 17.3399 10.2" stroke={ color? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3 22H14" stroke={ color? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18 22H21" stroke={ color? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  );
+};
 
 
 
