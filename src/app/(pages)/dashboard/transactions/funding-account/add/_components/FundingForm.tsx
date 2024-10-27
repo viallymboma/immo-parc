@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
 
+import { useRouter } from 'next/navigation';
+
 import {
   allAccounts,
   AllAccountsType,
@@ -11,11 +13,15 @@ import { TotalActifSvgIcon } from '@/components/svgs/SvgIcons';
 
 const FundingForm = () => {
 
-  const [ selectedAmount, setSelectedAmount ] = React.useState<number>(); 
+  const [ selectedAmount, setSelectedAmount ] = React.useState<number>(0); 
   const [ selectedAmountError, setSelectedAmountError ] = React.useState<string>(""); 
 
-  const [ selectedAccount, setSelectedAccount ] = React.useState<number | string>(); 
+  const [ selectedAccount, setSelectedAccount ] = React.useState<number | string>(0); 
   const [ selectedAccountError, setSelectedAccountError ] = React.useState<string>(""); 
+
+  const [ myAccountMobileNumber, ] = React.useState <number> (2376995500474)
+
+  const router = useRouter ()
 
   console.log(selectedAccount, selectedAmount , "uuuuuuuuuuuuuuu")
 
@@ -40,10 +46,12 @@ const FundingForm = () => {
       setSelectedAmountError ("Le montant ne peut être inférieur à 1000 FCFA")
       return null
     }
-    if (selectedAccount !== undefined || selectedAccount !== "" ) {
+    if (selectedAccount as number < 1 ) {
       setSelectedAccountError ("Sélectionnez l'un des comptes disponibles")
       return null
     }
+
+    router.push(`/dashboard/transactions/funding-account/add/final-stage?amount=${ selectedAmount }&number=${ myAccountMobileNumber }&operator=${ selectedAccount }`); 
   }
 
   return (
@@ -55,6 +63,7 @@ const FundingForm = () => {
         >
           Montant <span className="text-red">*</span>
         </label>
+
         <div className="relative">
             <input
                 value={ selectedAmount }
@@ -67,8 +76,8 @@ const FundingForm = () => {
             <span className="absolute right-4.5 top-1/2 -translate-y-1/2">
               <TotalActifSvgIcon color="#fff" />
             </span>
-
         </div>
+
         <p className='text-red-400'>
             {
                 selectedAmountError && 

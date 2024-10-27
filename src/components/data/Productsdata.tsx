@@ -1,3 +1,5 @@
+import MOMOImage from '../../../public/operators/momo1-logo.jpg';
+import OMImage from '../../../public/operators/orange1-logo.jpg';
 import {
   Dashboard2SvgIcon,
   ProductsSvgIcon,
@@ -136,13 +138,14 @@ export const accounts: AccountTypeM [] = [
 ]
 
 export type AllAccountsType = {
-    id?: string | number, 
-    name?: string, 
-    service?: string, 
-    abreviation?: string, 
-    operator?: string, 
-    balance?: number, 
-    phone_number?: number
+    id?: string | number;
+    name?: string; 
+    service?: string;  
+    abreviation?: string; 
+    operator?: string; 
+    balance?: number; 
+    phone_number?: number; 
+    image?: any; 
 }
 
 export const allAccounts: AllAccountsType [] = [
@@ -152,7 +155,8 @@ export const allAccounts: AllAccountsType [] = [
         service: "Orange Money", 
         abreviation: "OM", 
         balance: 50000, 
-        phone_number: 237695500474
+        phone_number: 237695500474,
+        image: `${ OMImage }`
     }, 
     {
         id: 2,
@@ -160,24 +164,21 @@ export const allAccounts: AllAccountsType [] = [
         service: "Mobile Money", 
         abreviation: "MoMo", 
         balance: 60000, 
-        phone_number: 237675500474
+        phone_number: 237675500474, 
+        image: `${ MOMOImage }`, 
     }, 
     {
         id: 3,
         name: "Orange", 
         service: "Orange Money", 
         abreviation: "OM", 
+        image: `${ OMImage }`
     }, 
     {
         id: 4,
         name: "MTN", 
         service: "Mobile Money", 
         abreviation: "MoMo", 
+        image: `${ MOMOImage }`, 
     }
 ]
-
-// stroke-linejoin
-// stroke-width
-// stroke-miterlimit
-// stroke-linecap
-// stroke-linejoin

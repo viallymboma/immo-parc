@@ -553,8 +553,8 @@ export const PasswordSvgIcon: React.FC <SVGComponentType> = ({ width, height }) 
 export const EyeSvgIcon: React.FC <SVGComponentType> = ({ width, height }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0001 20.27C15.5301 20.27 18.8201 18.19 21.1101 14.59C22.0101 13.18 22.0101 10.81 21.1101 9.39997C18.8201 5.79997 15.5301 3.71997 12.0001 3.71997C8.47009 3.71997 5.18009 5.79997 2.89009 9.39997C1.99009 10.81 1.99009 13.18 2.89009 14.59C5.18009 18.19 8.47009 20.27 12.0001 20.27Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0001 20.27C15.5301 20.27 18.8201 18.19 21.1101 14.59C22.0101 13.18 22.0101 10.81 21.1101 9.39997C18.8201 5.79997 15.5301 3.71997 12.0001 3.71997C8.47009 3.71997 5.18009 5.79997 2.89009 9.39997C1.99009 10.81 1.99009 13.18 2.89009 14.59C5.18009 18.19 8.47009 20.27 12.0001 20.27Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -562,12 +562,12 @@ export const EyeSvgIcon: React.FC <SVGComponentType> = ({ width, height }) => {
 export const BlockedEyeSvgIcon: React.FC <SVGComponentType> = ({ width, height }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M17.8201 5.76998C16.0701 4.44998 14.0701 3.72998 12.0001 3.72998C8.47009 3.72998 5.18009 5.80998 2.89009 9.40998C1.99009 10.82 1.99009 13.19 2.89009 14.6C3.68009 15.84 4.60009 16.91 5.60009 17.77" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.41992 19.5299C9.55992 20.0099 10.7699 20.2699 11.9999 20.2699C15.5299 20.2699 18.8199 18.1899 21.1099 14.5899C22.0099 13.1799 22.0099 10.8099 21.1099 9.39993C20.7799 8.87993 20.4199 8.38993 20.0499 7.92993" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M15.5099 12.7C15.2499 14.11 14.0999 15.26 12.6899 15.52" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M9.47 14.53L2 22" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22 2L14.53 9.47" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.5299 9.46992L9.46992 14.5299C8.81992 13.8799 8.41992 12.9899 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C12.9899 8.41992 13.8799 8.81992 14.5299 9.46992Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M17.8201 5.76998C16.0701 4.44998 14.0701 3.72998 12.0001 3.72998C8.47009 3.72998 5.18009 5.80998 2.89009 9.40998C1.99009 10.82 1.99009 13.19 2.89009 14.6C3.68009 15.84 4.60009 16.91 5.60009 17.77" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M8.41992 19.5299C9.55992 20.0099 10.7699 20.2699 11.9999 20.2699C15.5299 20.2699 18.8199 18.1899 21.1099 14.5899C22.0099 13.1799 22.0099 10.8099 21.1099 9.39993C20.7799 8.87993 20.4199 8.38993 20.0499 7.92993" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M15.5099 12.7C15.2499 14.11 14.0999 15.26 12.6899 15.52" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M9.47 14.53L2 22" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M22 2L14.53 9.47" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -585,13 +585,13 @@ export const PhoneSvgIcon: React.FC<SVGComponentType> = ({ height, width, color 
 export const ProductsSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8.80994 2L5.18994 5.63" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M15.1899 2L18.8099 5.63" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z" stroke="#BABABA" stroke-width="1.5"/>
-      <path d="M9.76001 14V17.55" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M14.3601 14V17.55" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M4.90991 18.64C5.22991 20.58 5.99991 22 8.85991 22H14.8899C17.9999 22 18.4599 20.64 18.8199 18.76L20.4999 10" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M3.5 10L4.22 14.38" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M8.80994 2L5.18994 5.63" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M15.1899 2L18.8099 5.63" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2 7.84998C2 5.99998 2.99 5.84998 4.22 5.84998H19.78C21.01 5.84998 22 5.99998 22 7.84998C22 9.99998 21.01 9.84998 19.78 9.84998H4.22C2.99 9.84998 2 9.99998 2 7.84998Z" stroke="#BABABA" strokeWidth="1.5"/>
+      <path d="M9.76001 14V17.55" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round"/>
+      <path d="M14.3601 14V17.55" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round"/>
+      <path d="M4.90991 18.64C5.22991 20.58 5.99991 22 8.85991 22H14.8899C17.9999 22 18.4599 20.64 18.8199 18.76L20.4999 10" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round"/>
+      <path d="M3.5 10L4.22 14.38" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round"/>
     </svg>
   )
 }
@@ -600,12 +600,12 @@ export const ProductsSvgIcon: React.FC<SVGComponentType> = ({ height, width, col
 export const WithdrawalSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.5005 16H9.50049" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.9004 2.52003L12.8704 2.59003L9.97044 9.32003H7.12044C6.44044 9.32003 5.79044 9.46003 5.20044 9.71003L6.95044 5.53003L6.99044 5.43003L7.06044 5.27003C7.08044 5.21003 7.10044 5.15003 7.13044 5.10003C8.44044 2.07003 9.92044 1.38003 12.9004 2.52003Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18.2905 9.52002C17.8405 9.38002 17.3605 9.32002 16.8805 9.32002H9.97046L12.8705 2.59002L12.9005 2.52002C13.0505 2.57002 13.1905 2.64002 13.3405 2.70002L15.5505 3.63002C16.7805 4.14002 17.6405 4.67002 18.1605 5.31002C18.2605 5.43002 18.3405 5.54002 18.4105 5.67002C18.5005 5.81002 18.5705 5.95002 18.6105 6.10002C18.6505 6.19002 18.6805 6.28002 18.7005 6.36002C18.9705 7.20002 18.8105 8.23002 18.2905 9.52002Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0005 22H8.10049C7.86049 22 7.62049 21.98 7.39049 21.95C4.21049 21.74 2.51049 20.04 2.30049 16.86C2.27049 16.63 2.25049 16.39 2.25049 16.15V14.2C2.25049 12.19 3.47049 10.46 5.21049 9.71001C5.81049 9.46001 6.45049 9.32001 7.13049 9.32001H16.8905C17.3805 9.32001 17.8605 9.39001 18.3005 9.52001C20.3005 10.12 21.7605 11.99 21.7605 14.19V16.14C21.7605 16.34 21.7505 16.54 21.7405 16.74C21.5505 20.24 19.6005 22 15.9005 22" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6.95048 5.53003L5.20048 9.71003C3.46048 10.46 2.24048 12.19 2.24048 14.2V11.27C2.24048 8.43003 4.26048 6.06003 6.95048 5.53003Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M21.7605 11.27V14.2C21.7605 12 20.3005 10.13 18.3005 9.52998C18.8205 8.22998 18.9705 7.20998 18.7205 6.35998C18.7005 6.26998 18.6705 6.17998 18.6305 6.09998C20.4905 7.05998 21.7605 9.02998 21.7605 11.27Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.5005 16H9.50049" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.9004 2.52003L12.8704 2.59003L9.97044 9.32003H7.12044C6.44044 9.32003 5.79044 9.46003 5.20044 9.71003L6.95044 5.53003L6.99044 5.43003L7.06044 5.27003C7.08044 5.21003 7.10044 5.15003 7.13044 5.10003C8.44044 2.07003 9.92044 1.38003 12.9004 2.52003Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M18.2905 9.52002C17.8405 9.38002 17.3605 9.32002 16.8805 9.32002H9.97046L12.8705 2.59002L12.9005 2.52002C13.0505 2.57002 13.1905 2.64002 13.3405 2.70002L15.5505 3.63002C16.7805 4.14002 17.6405 4.67002 18.1605 5.31002C18.2605 5.43002 18.3405 5.54002 18.4105 5.67002C18.5005 5.81002 18.5705 5.95002 18.6105 6.10002C18.6505 6.19002 18.6805 6.28002 18.7005 6.36002C18.9705 7.20002 18.8105 8.23002 18.2905 9.52002Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0005 22H8.10049C7.86049 22 7.62049 21.98 7.39049 21.95C4.21049 21.74 2.51049 20.04 2.30049 16.86C2.27049 16.63 2.25049 16.39 2.25049 16.15V14.2C2.25049 12.19 3.47049 10.46 5.21049 9.71001C5.81049 9.46001 6.45049 9.32001 7.13049 9.32001H16.8905C17.3805 9.32001 17.8605 9.39001 18.3005 9.52001C20.3005 10.12 21.7605 11.99 21.7605 14.19V16.14C21.7605 16.34 21.7505 16.54 21.7405 16.74C21.5505 20.24 19.6005 22 15.9005 22" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6.95048 5.53003L5.20048 9.71003C3.46048 10.46 2.24048 12.19 2.24048 14.2V11.27C2.24048 8.43003 4.26048 6.06003 6.95048 5.53003Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M21.7605 11.27V14.2C21.7605 12 20.3005 10.13 18.3005 9.52998C18.8205 8.22998 18.9705 7.20998 18.7205 6.35998C18.7005 6.26998 18.6705 6.17998 18.6305 6.09998C20.4905 7.05998 21.7605 9.02998 21.7605 11.27Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -614,13 +614,13 @@ export const WithdrawalSvgIcon: React.FC<SVGComponentType> = ({ height, width, c
 export const RechargeSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.5005 15.44H9.50049" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0005 13V18" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0005 22H8.10049C7.86049 22 7.62049 21.98 7.39049 21.95C4.21049 21.74 2.51049 20.04 2.30049 16.86C2.27049 16.63 2.25049 16.39 2.25049 16.15V14.2C2.25049 12.19 3.47049 10.46 5.21049 9.71001C5.81049 9.46001 6.45049 9.32001 7.13049 9.32001H16.8905C17.3805 9.32001 17.8605 9.39001 18.3005 9.52001C20.3005 10.12 21.7605 11.99 21.7605 14.19V16.14C21.7605 16.34 21.7505 16.54 21.7405 16.74C21.5505 20.24 19.6005 22 15.9005 22" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.9004 2.52003L12.8704 2.59003L9.97044 9.32003H7.12044C6.44044 9.32003 5.79044 9.46003 5.20044 9.71003L6.95044 5.53003L6.99044 5.43003L7.06044 5.27003C7.08044 5.21003 7.10044 5.15003 7.13044 5.10003C8.44044 2.07003 9.92044 1.38003 12.9004 2.52003Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18.2905 9.52002C17.8405 9.38002 17.3605 9.32002 16.8805 9.32002H9.97046L12.8705 2.59002L12.9005 2.52002C13.0505 2.57002 13.1905 2.64002 13.3405 2.70002L15.5505 3.63002C16.7805 4.14002 17.6405 4.67002 18.1605 5.31002C18.2605 5.43002 18.3405 5.54002 18.4105 5.67002C18.5005 5.81002 18.5705 5.95002 18.6105 6.10002C18.6505 6.19002 18.6805 6.28002 18.7005 6.36002C18.9705 7.20002 18.8105 8.23002 18.2905 9.52002Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6.95048 5.53003L5.20048 9.71003C3.46048 10.46 2.24048 12.19 2.24048 14.2V11.27C2.24048 8.43003 4.26048 6.06003 6.95048 5.53003Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M21.7605 11.27V14.2C21.7605 12 20.3005 10.13 18.3005 9.52998C18.8205 8.22998 18.9705 7.20998 18.7205 6.35998C18.7005 6.26998 18.6705 6.17998 18.6305 6.09998C20.4905 7.05998 21.7605 9.02998 21.7605 11.27Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.5005 15.44H9.50049" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0005 13V18" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0005 22H8.10049C7.86049 22 7.62049 21.98 7.39049 21.95C4.21049 21.74 2.51049 20.04 2.30049 16.86C2.27049 16.63 2.25049 16.39 2.25049 16.15V14.2C2.25049 12.19 3.47049 10.46 5.21049 9.71001C5.81049 9.46001 6.45049 9.32001 7.13049 9.32001H16.8905C17.3805 9.32001 17.8605 9.39001 18.3005 9.52001C20.3005 10.12 21.7605 11.99 21.7605 14.19V16.14C21.7605 16.34 21.7505 16.54 21.7405 16.74C21.5505 20.24 19.6005 22 15.9005 22" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.9004 2.52003L12.8704 2.59003L9.97044 9.32003H7.12044C6.44044 9.32003 5.79044 9.46003 5.20044 9.71003L6.95044 5.53003L6.99044 5.43003L7.06044 5.27003C7.08044 5.21003 7.10044 5.15003 7.13044 5.10003C8.44044 2.07003 9.92044 1.38003 12.9004 2.52003Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M18.2905 9.52002C17.8405 9.38002 17.3605 9.32002 16.8805 9.32002H9.97046L12.8705 2.59002L12.9005 2.52002C13.0505 2.57002 13.1905 2.64002 13.3405 2.70002L15.5505 3.63002C16.7805 4.14002 17.6405 4.67002 18.1605 5.31002C18.2605 5.43002 18.3405 5.54002 18.4105 5.67002C18.5005 5.81002 18.5705 5.95002 18.6105 6.10002C18.6505 6.19002 18.6805 6.28002 18.7005 6.36002C18.9705 7.20002 18.8105 8.23002 18.2905 9.52002Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6.95048 5.53003L5.20048 9.71003C3.46048 10.46 2.24048 12.19 2.24048 14.2V11.27C2.24048 8.43003 4.26048 6.06003 6.95048 5.53003Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M21.7605 11.27V14.2C21.7605 12 20.3005 10.13 18.3005 9.52998C18.8205 8.22998 18.9705 7.20998 18.7205 6.35998C18.7005 6.26998 18.6705 6.17998 18.6305 6.09998C20.4905 7.05998 21.7605 9.02998 21.7605 11.27Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -629,11 +629,11 @@ export const RechargeSvgIcon: React.FC<SVGComponentType> = ({ height, width, col
 export const WaletSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21.3701 14L21.7101 10.43C21.9701 7.99 21.2701 6 17.0001 6H7.00007C2.73007 6 2.03007 7.99 2.30007 10.43L3.05007 18.43C3.26007 20.39 3.98007 22 8.00007 22H16.0001C20.0201 22 20.7401 20.39 20.9501 18.43" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M2.62012 11.27C4.87012 12.81 7.41012 13.74 10.0001 14.03" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M21.3701 14L21.7101 10.43C21.9701 7.99 21.2701 6 17.0001 6H7.00007C2.73007 6 2.03007 7.99 2.30007 10.43L3.05007 18.43C3.26007 20.39 3.98007 22 8.00007 22H16.0001C20.0201 22 20.7401 20.39 20.9501 18.43" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2.62012 11.27C4.87012 12.81 7.41012 13.74 10.0001 14.03" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -642,9 +642,9 @@ export const WaletSvgIcon: React.FC<SVGComponentType> = ({ height, width, color 
 export const ActivateUserSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.4399 19.05L15.9599 20.57L18.9999 17.53" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M11.99 21.8101C10.17 21.8101 8.36004 21.3501 6.98004 20.4301C4.56004 18.8101 4.56004 16.1701 6.98004 14.5601C9.73004 12.7201 14.24 12.7201 16.99 14.5601" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M15.6801 3.96C16.1601 4.67 16.4401 5.52 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.4399 19.05L15.9599 20.57L18.9999 17.53" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M11.99 21.8101C10.17 21.8101 8.36004 21.3501 6.98004 20.4301C4.56004 18.8101 4.56004 16.1701 6.98004 14.5601C9.73004 12.7201 14.24 12.7201 16.99 14.5601" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M15.6801 3.96C16.1601 4.67 16.4401 5.52 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -653,10 +653,10 @@ export const ActivateUserSvgIcon: React.FC<SVGComponentType> = ({ height, width,
 export const DeactivateUserSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M18.4101 18.09L15.5901 20.91" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18.4101 20.91L15.5901 18.09" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12 21.8101C10.18 21.8101 8.37005 21.3501 6.99005 20.4301C4.57005 18.8101 4.57005 16.1701 6.99005 14.5601C9.74005 12.7201 14.25 12.7201 17 14.5601" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M15.6801 3.96C16.1601 4.67 16.4401 5.52 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18.4101 18.09L15.5901 20.91" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M18.4101 20.91L15.5901 18.09" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12 21.8101C10.18 21.8101 8.37005 21.3501 6.99005 20.4301C4.57005 18.8101 4.57005 16.1701 6.99005 14.5601C9.74005 12.7201 14.25 12.7201 17 14.5601" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M15.6801 3.96C16.1601 4.67 16.4401 5.52 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -664,10 +664,10 @@ export const DeactivateUserSvgIcon: React.FC<SVGComponentType> = ({ height, widt
 export const DoubleUserSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12.6801 3.96C13.1601 4.67 13.4401 5.52 13.4401 6.44C13.4301 8.84 11.5401 10.79 9.16006 10.87C9.06006 10.86 8.94006 10.86 8.83006 10.87C6.45006 10.79 4.56006 8.84 4.56006 6.44C4.56006 3.99 6.54006 2 9.00006 2" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M16.41 4C18.35 4 19.91 5.57 19.91 7.5C19.91 9.39 18.41 10.93 16.54 11C16.46 10.99 16.37 10.99 16.28 11" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M4.15997 14.56C1.73997 16.18 1.73997 18.82 4.15997 20.43C6.90997 22.27 11.42 22.27 14.17 20.43C16.59 18.81 16.59 16.17 14.17 14.56C11.43 12.73 6.91997 12.73 4.15997 14.56Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18.3401 20C19.0601 19.85 19.7401 19.56 20.3001 19.13C21.8601 17.96 21.8601 16.03 20.3001 14.86C19.7501 14.44 19.0801 14.16 18.3701 14" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.6801 3.96C13.1601 4.67 13.4401 5.52 13.4401 6.44C13.4301 8.84 11.5401 10.79 9.16006 10.87C9.06006 10.86 8.94006 10.86 8.83006 10.87C6.45006 10.79 4.56006 8.84 4.56006 6.44C4.56006 3.99 6.54006 2 9.00006 2" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16.41 4C18.35 4 19.91 5.57 19.91 7.5C19.91 9.39 18.41 10.93 16.54 11C16.46 10.99 16.37 10.99 16.28 11" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M4.15997 14.56C1.73997 16.18 1.73997 18.82 4.15997 20.43C6.90997 22.27 11.42 22.27 14.17 20.43C16.59 18.81 16.59 16.17 14.17 14.56C11.43 12.73 6.91997 12.73 4.15997 14.56Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M18.3401 20C19.0601 19.85 19.7401 19.56 20.3001 19.13C21.8601 17.96 21.8601 16.03 20.3001 14.86C19.7501 14.44 19.0801 14.16 18.3701 14" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -675,12 +675,12 @@ export const DoubleUserSvgIcon: React.FC<SVGComponentType> = ({ height, width, c
 export const TeamSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M18.0001 7.16C17.9401 7.15 17.8701 7.15 17.8101 7.16C16.4301 7.11 15.3301 5.98 15.3301 4.58C15.3301 3.15 16.4801 2 17.9101 2C19.3401 2 20.4901 3.16 20.4901 4.58C20.4801 5.98 19.3801 7.11 18.0001 7.16Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M16.9702 14.44C18.3402 14.67 19.8502 14.43 20.9102 13.72C22.3202 12.78 22.3202 11.24 20.9102 10.3C19.8402 9.59004 18.3102 9.35003 16.9402 9.59003" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59004 5.65994 9.35003 7.02994 9.59003" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0001 14.63C11.9401 14.62 11.8701 14.62 11.8101 14.63C10.4301 14.58 9.33008 13.45 9.33008 12.05C9.33008 10.62 10.4801 9.46997 11.9101 9.46997C13.3401 9.46997 14.4901 10.63 14.4901 12.05C14.4801 13.45 13.3801 14.59 12.0001 14.63Z" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18.0001 7.16C17.9401 7.15 17.8701 7.15 17.8101 7.16C16.4301 7.11 15.3301 5.98 15.3301 4.58C15.3301 3.15 16.4801 2 17.9101 2C19.3401 2 20.4901 3.16 20.4901 4.58C20.4801 5.98 19.3801 7.11 18.0001 7.16Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16.9702 14.44C18.3402 14.67 19.8502 14.43 20.9102 13.72C22.3202 12.78 22.3202 11.24 20.9102 10.3C19.8402 9.59004 18.3102 9.35003 16.9402 9.59003" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59004 5.65994 9.35003 7.02994 9.59003" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0001 14.63C11.9401 14.62 11.8701 14.62 11.8101 14.63C10.4301 14.58 9.33008 13.45 9.33008 12.05C9.33008 10.62 10.4801 9.46997 11.9101 9.46997C13.3401 9.46997 14.4901 10.63 14.4901 12.05C14.4801 13.45 13.3801 14.59 12.0001 14.63Z" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -688,10 +688,10 @@ export const TeamSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }
 export const AccountEditSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15.02 3.01001C14.18 2.37001 13.14 2 12 2C9.24 2 7 4.24 7 7C7 9.76 9.24 12 12 12C14.76 12 17 9.76 17 7" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M19.2101 15.74L15.67 19.2801C15.53 19.4201 15.4 19.68 15.37 19.87L15.18 21.22C15.11 21.71 15.45 22.05 15.94 21.98L17.29 21.79C17.48 21.76 17.75 21.63 17.88 21.49L21.42 17.95C22.03 17.34 22.32 16.63 21.42 15.73C20.53 14.84 19.8201 15.13 19.2101 15.74Z" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18.7001 16.25C19.0001 17.33 19.84 18.17 20.92 18.47" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M3.40991 22C3.40991 18.13 7.25994 15 11.9999 15C13.0399 15 14.0399 15.15 14.9699 15.43" stroke="#BABABA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15.02 3.01001C14.18 2.37001 13.14 2 12 2C9.24 2 7 4.24 7 7C7 9.76 9.24 12 12 12C14.76 12 17 9.76 17 7" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M19.2101 15.74L15.67 19.2801C15.53 19.4201 15.4 19.68 15.37 19.87L15.18 21.22C15.11 21.71 15.45 22.05 15.94 21.98L17.29 21.79C17.48 21.76 17.75 21.63 17.88 21.49L21.42 17.95C22.03 17.34 22.32 16.63 21.42 15.73C20.53 14.84 19.8201 15.13 19.2101 15.74Z" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M18.7001 16.25C19.0001 17.33 19.84 18.17 20.92 18.47" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M3.40991 22C3.40991 18.13 7.25994 15 11.9999 15C13.0399 15 14.0399 15.15 14.9699 15.43" stroke="#BABABA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -700,17 +700,17 @@ export const AccountEditSvgIcon: React.FC<SVGComponentType> = ({ height, width, 
 export const SettingHorizontalSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19 18V11" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M19 22V21" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5 18V11" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5 22V21" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M19 7V2" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12 22V17" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12 13V2" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5 7V2" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M3 11H7" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M17 11H21" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M10 13H14" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M19 18V11" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M19 22V21" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5 18V11" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5 22V21" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M19 7V2" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12 22V17" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12 13V2" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5 7V2" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M3 11H7" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M17 11H21" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M10 13H14" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -719,12 +719,12 @@ export const SettingHorizontalSvgIcon: React.FC<SVGComponentType> = ({ height, w
 export const MyAccountSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22 6.5H16" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6 6.5H2" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M13.5 6.5C13.5 8.43 11.93 10 10 10C8.07 10 6.5 8.43 6.5 6.5C6.5 4.57 8.07 3 10 3C10.34 3 10.67 3.05 10.98 3.14" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22 17.5H18" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8 17.5H2" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M14 21C15.933 21 17.5 19.433 17.5 17.5C17.5 15.567 15.933 14 14 14C12.067 14 10.5 15.567 10.5 17.5C10.5 19.433 12.067 21 14 21Z" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 6.5H16" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6 6.5H2" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M13.5 6.5C13.5 8.43 11.93 10 10 10C8.07 10 6.5 8.43 6.5 6.5C6.5 4.57 8.07 3 10 3C10.34 3 10.67 3.05 10.98 3.14" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M22 17.5H18" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M8 17.5H2" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M14 21C15.933 21 17.5 19.433 17.5 17.5C17.5 15.567 15.933 14 14 14C12.067 14 10.5 15.567 10.5 17.5C10.5 19.433 12.067 21 14 21Z" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -733,9 +733,9 @@ export const MyAccountSvgIcon: React.FC<SVGComponentType> = ({ height, width, co
 export const SettingSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 12C15 10.34 13.66 9 12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C12.41 15 12.81 14.92 13.17 14.76" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6.88 20.5801L7.97 21.2101C8.76 21.6801 9.78 21.4001 10.25 20.6101L10.36 20.4201C11.26 18.8501 12.74 18.8501 13.65 20.4201L13.76 20.6101C14.23 21.4001 15.25 21.6801 16.04 21.2101L17.77 20.2201C18.68 19.7001 18.99 18.5301 18.47 17.6301C17.56 16.0601 18.3 14.7801 20.11 14.7801C21.15 14.7801 22.01 13.9301 22.01 12.8801V11.1201C22.01 10.0801 21.16 9.22007 20.11 9.22007C19.1 9.22007 18.42 8.82007 18.18 8.19007C17.99 7.70007 18.07 7.06007 18.47 6.37007C18.99 5.46007 18.68 4.30007 17.77 3.78007L16.96 3.32007" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M13.64 3.57994C12.74 5.14994 11.26 5.14994 10.35 3.57994L10.24 3.38994C9.78 2.59994 8.76 2.31994 7.97 2.78994L6.24 3.77994C5.33 4.29994 5.02 5.46994 5.54 6.37994C6.45 7.93994 5.71 9.21994 3.9 9.21994C2.86 9.21994 2 10.0699 2 11.1199V12.8799C2 13.9199 2.85 14.7799 3.9 14.7799C5.71 14.7799 6.45 16.0599 5.54 17.6299" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 12C15 10.34 13.66 9 12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C12.41 15 12.81 14.92 13.17 14.76" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6.88 20.5801L7.97 21.2101C8.76 21.6801 9.78 21.4001 10.25 20.6101L10.36 20.4201C11.26 18.8501 12.74 18.8501 13.65 20.4201L13.76 20.6101C14.23 21.4001 15.25 21.6801 16.04 21.2101L17.77 20.2201C18.68 19.7001 18.99 18.5301 18.47 17.6301C17.56 16.0601 18.3 14.7801 20.11 14.7801C21.15 14.7801 22.01 13.9301 22.01 12.8801V11.1201C22.01 10.0801 21.16 9.22007 20.11 9.22007C19.1 9.22007 18.42 8.82007 18.18 8.19007C17.99 7.70007 18.07 7.06007 18.47 6.37007C18.99 5.46007 18.68 4.30007 17.77 3.78007L16.96 3.32007" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M13.64 3.57994C12.74 5.14994 11.26 5.14994 10.35 3.57994L10.24 3.38994C9.78 2.59994 8.76 2.31994 7.97 2.78994L6.24 3.77994C5.33 4.29994 5.02 5.46994 5.54 6.37994C6.45 7.93994 5.71 9.21994 3.9 9.21994C2.86 9.21994 2 10.0699 2 11.1199V12.8799C2 13.9199 2.85 14.7799 3.9 14.7799C5.71 14.7799 6.45 16.0599 5.54 17.6299" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -744,10 +744,10 @@ export const SettingSvgIcon: React.FC<SVGComponentType> = ({ height, width, colo
 export const Dashboard2SvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10H19C21 10 22 9 22 7V5" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10H19C21 10 22 9 22 7V5" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -759,8 +759,8 @@ export const Dashboard2SvgIcon: React.FC<SVGComponentType> = ({ height, width, c
 export const ChevronRightSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12.9 7.94L15.52 10.56C16.29 11.33 16.29 12.59 15.52 13.36L9 19.87" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M9 4.03998L10.04 5.07998" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.9 7.94L15.52 10.56C16.29 11.33 16.29 12.59 15.52 13.36L9 19.87" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M9 4.03998L10.04 5.07998" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
@@ -769,10 +769,10 @@ export const ChevronRightSvgIcon: React.FC<SVGComponentType> = ({ height, width,
 export const CloseSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13.9902 10.0099L14.8302 9.16992" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M9.16992 14.8301L11.9199 12.0801" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M14.8299 14.8299L9.16992 9.16992" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M4 6C2.75 7.67 2 9.75 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C10.57 2 9.2 2.3 7.97 2.85" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.9902 10.0099L14.8302 9.16992" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M9.16992 14.8301L11.9199 12.0801" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M14.8299 14.8299L9.16992 9.16992" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M4 6C2.75 7.67 2 9.75 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C10.57 2 9.2 2.3 7.97 2.85" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
@@ -782,10 +782,10 @@ export const CloseSvgIcon: React.FC<SVGComponentType> = ({ height, width, color 
 export const EditAccountSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17.3701 10.17L18.7101 8.74999C20.1301 7.24999 20.7701 5.53999 18.5601 3.44999C16.3501 1.36999 14.6801 2.09999 13.2601 3.59999L5.0501 12.29C4.7401 12.62 4.4401 13.27 4.3801 13.72L4.0101 16.96C3.8801 18.13 4.7201 18.93 5.8801 18.73L9.1001 18.18C9.5501 18.1 10.1801 17.77 10.4901 17.43L14.4401 13.25" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M11.8899 5.04999C12.3199 7.80999 14.5599 9.91999 17.3399 10.2" stroke={ color? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M3 22H14" stroke={ color? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M18 22H21" stroke={ color? color : "#BABABA"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17.3701 10.17L18.7101 8.74999C20.1301 7.24999 20.7701 5.53999 18.5601 3.44999C16.3501 1.36999 14.6801 2.09999 13.2601 3.59999L5.0501 12.29C4.7401 12.62 4.4401 13.27 4.3801 13.72L4.0101 16.96C3.8801 18.13 4.7201 18.93 5.8801 18.73L9.1001 18.18C9.5501 18.1 10.1801 17.77 10.4901 17.43L14.4401 13.25" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M11.8899 5.04999C12.3199 7.80999 14.5599 9.91999 17.3399 10.2" stroke={ color? color : "#BABABA"} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M3 22H14" stroke={ color? color : "#BABABA"} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M18 22H21" stroke={ color? color : "#BABABA"} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
@@ -794,7 +794,7 @@ export const EditAccountSvgIcon: React.FC<SVGComponentType> = ({ height, width, 
 export const BackArrowSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 19.92L8.47997 13.4C7.70997 12.63 7.70997 11.37 8.47997 10.6L15 4.07996" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 19.92L8.47997 13.4C7.70997 12.63 7.70997 11.37 8.47997 10.6L15 4.07996" stroke="#BABABA" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
@@ -803,12 +803,12 @@ export const BackArrowSvgIcon: React.FC<SVGComponentType> = ({ height, width, co
 export const TotalActifSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9.50049 13.75C9.50049 14.72 10.2505 15.5 11.1705 15.5H13.0505C13.8505 15.5 14.5005 14.82 14.5005 13.97C14.5005 13.06 14.1005 12.73 13.5105 12.52L10.5005 11.47C9.91049 11.26 9.5105 10.94 9.5105 10.02C9.5105 9.17999 10.1605 8.48999 10.9605 8.48999H12.8405C13.7605 8.48999 14.5105 9.26999 14.5105 10.24" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0005 7.5V16.5" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M17.0005 3V7H21.0005" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22.0005 2L17.0005 7" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12.0005 2C6.48049 2 2.00049 6.48 2.00049 12C2.00049 15.94 4.28049 19.35 7.60049 20.98" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22.0005 12C22.0005 17.52 17.5205 22 12.0005 22" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9.50049 13.75C9.50049 14.72 10.2505 15.5 11.1705 15.5H13.0505C13.8505 15.5 14.5005 14.82 14.5005 13.97C14.5005 13.06 14.1005 12.73 13.5105 12.52L10.5005 11.47C9.91049 11.26 9.5105 10.94 9.5105 10.02C9.5105 9.17999 10.1605 8.48999 10.9605 8.48999H12.8405C13.7605 8.48999 14.5105 9.26999 14.5105 10.24" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0005 7.5V16.5" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M17.0005 3V7H21.0005" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M22.0005 2L17.0005 7" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12.0005 2C6.48049 2 2.00049 6.48 2.00049 12C2.00049 15.94 4.28049 19.35 7.60049 20.98" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M22.0005 12C22.0005 17.52 17.5205 22 12.0005 22" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
@@ -818,11 +818,11 @@ export const TotalActifSvgIcon: React.FC<SVGComponentType> = ({ height, width, c
 export const GainsDuJourSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 22H17C20 22 22 20 22 17V12C22 9.3 20.3 7.3 17.8 7C17.6 7 17.3 7 17 7H7C6.7 7 6.5 6.99998 6.2 7.09998C3.6 7.39998 2 9.3 2 12C2 12.3 2 12.7 2 13" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M16.8002 4.79997C17.4002 5.39997 17.7002 6.19998 17.8002 6.99998C17.6002 6.99998 17.3002 6.99998 17.0002 6.99998H7.0002C6.7002 6.99998 6.5002 6.99996 6.2002 7.09996C6.3002 6.79996 6.5002 6.59997 6.8002 6.29997L10.0002 2.99998C10.8202 2.17998 11.9102 1.83996 12.9602 1.97996" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22 12.5H19C17.9 12.5 17 13.4 17 14.5C17 15.6 17.9 16.5 19 16.5H22" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.8001 21.4C7.5701 21.4 9.0001 19.97 9.0001 18.2C9.0001 16.43 7.5701 15 5.8001 15C4.0301 15 2.6001 16.43 2.6001 18.2C2.6001 19.97 4.0301 21.4 5.8001 21.4Z" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M2 22L3 21" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 22H17C20 22 22 20 22 17V12C22 9.3 20.3 7.3 17.8 7C17.6 7 17.3 7 17 7H7C6.7 7 6.5 6.99998 6.2 7.09998C3.6 7.39998 2 9.3 2 12C2 12.3 2 12.7 2 13" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16.8002 4.79997C17.4002 5.39997 17.7002 6.19998 17.8002 6.99998C17.6002 6.99998 17.3002 6.99998 17.0002 6.99998H7.0002C6.7002 6.99998 6.5002 6.99996 6.2002 7.09996C6.3002 6.79996 6.5002 6.59997 6.8002 6.29997L10.0002 2.99998C10.8202 2.17998 11.9102 1.83996 12.9602 1.97996" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M22 12.5H19C17.9 12.5 17 13.4 17 14.5C17 15.6 17.9 16.5 19 16.5H22" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M5.8001 21.4C7.5701 21.4 9.0001 19.97 9.0001 18.2C9.0001 16.43 7.5701 15 5.8001 15C4.0301 15 2.6001 16.43 2.6001 18.2C2.6001 19.97 4.0301 21.4 5.8001 21.4Z" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2 22L3 21" stroke={ color ? color : "#BABABA"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
   );
@@ -832,10 +832,10 @@ export const GainsDuJourSvgIcon: React.FC<SVGComponentType> = ({ height, width, 
 export const AddSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 18V6" stroke={ color ? color : "#BABABA" } stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M16 12H18" stroke={ color ? color : "#BABABA" } stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6 12H11.66" stroke={ color ? color : "#BABABA" } stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12 18V6" stroke={ color ? color : "#BABABA" } stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 18V6" stroke={ color ? color : "#BABABA" } strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16 12H18" stroke={ color ? color : "#BABABA" } strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6 12H11.66" stroke={ color ? color : "#BABABA" } strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M12 18V6" stroke={ color ? color : "#BABABA" } strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
   );
