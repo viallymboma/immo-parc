@@ -35,9 +35,9 @@ const MyFinancialAccountPage = () => {
             />
             <div className='flex flex-col gap-3 '>
                 {
-                    my_accounts?.map((element: AccountType) => {
+                    my_accounts?.map((element: AccountType, index: number) => {
                         return (
-                            <div className='flex px-4 py-6 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700 flex-col shadow-5 rounded-3xl'>
+                            <div key={`${element.id}-${index}`} className='flex px-4 py-6 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700 flex-col shadow-5 rounded-3xl'>
                                 <div 
                                     onClick={ () => {
                                         deleteAccount (element?.id!, element)

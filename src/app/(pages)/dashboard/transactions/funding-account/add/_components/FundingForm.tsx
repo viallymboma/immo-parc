@@ -2,6 +2,8 @@
 import React from 'react';
 
 import {
+  allAccounts,
+  AllAccountsType,
   suggestedAmounts,
   SuggestedAmounts,
 } from '@/components/data/Productsdata';
@@ -9,24 +11,43 @@ import { TotalActifSvgIcon } from '@/components/svgs/SvgIcons';
 
 const FundingForm = () => {
 
-  const [ selectedAmount, setSelectedAmount ] = React.useState<number>(1000); 
+  const [ selectedAmount, setSelectedAmount ] = React.useState<number>(); 
   const [ selectedAmountError, setSelectedAmountError ] = React.useState<string>(""); 
 
-  const handleSelectAmount = (amount: any) => {
-    setSelectedAmount (amount.target.value)
+  const [ selectedAccount, setSelectedAccount ] = React.useState<number | string>(); 
+  const [ selectedAccountError, setSelectedAccountError ] = React.useState<string>(""); 
+
+  console.log(selectedAccount, selectedAmount , "uuuuuuuuuuuuuuu")
+
+  const handleInputAmount = (e: any) => {
+    setSelectedAmount (e.target.value)
     setSelectedAmountError ("")
+  }
+
+  const handleSelectAmount = (amount: any) => {
+    setSelectedAmount (amount)
+    setSelectedAmountError ("")
+  }
+
+  const handleSelectAccount = (account: any) => {
+    setSelectedAccount (account)
+    setSelectedAccountError ("")
   }
 
   const submitSelection = (e: any) => {
     e.preventDefault(); 
-    if (selectedAmount < 1000 ) {
+    if (selectedAmount! < 1000 ) {
       setSelectedAmountError ("Le montant ne peut être inférieur à 1000 FCFA")
+      return null
+    }
+    if (selectedAccount !== undefined || selectedAccount !== "" ) {
+      setSelectedAccountError ("Sélectionnez l'un des comptes disponibles")
       return null
     }
   }
 
   return (
-    <div>
+    <div className='mb-[5rem]'>
       <div className={` "mb-4" } `}>
         <label
             htmlFor="email"
@@ -37,9 +58,9 @@ const FundingForm = () => {
         <div className="relative">
             <input
                 value={ selectedAmount }
-                onChange={ (e) => handleSelectAmount (e)}
+                onChange={ (e) => handleInputAmount (e)}
                 type="number"
-                placeholder="Click on the below buttons to select"
+                placeholder="écrivez ou cliquez sur les boutons ci-dessous pour sélectionner un montant"
                 name="amount"
                 className="w-full rounded-lg border border-stroke bg-transparent py-[15px] pl-6 pr-11 font-medium text-dark outline-none focus:border-primary focus-visible:shadow-none dark:border-dark-3 dark:bg-dark-2 dark:text-white dark:focus:border-primary"
             />
@@ -57,19 +78,50 @@ const FundingForm = () => {
             }
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 p-4">
         {/* amount list selection */}
-        {
-          suggestedAmounts?.map((amount: SuggestedAmounts, index: number) => {
-            return (
-              <div className='' key={ `${ amount?.id }-${ index }`} >
-                { amount?.amount }
-              </div>
-            )
-          })
-        }
+        {suggestedAmounts?.map((amount: SuggestedAmounts, index: number) => {
+          return (
+          <div
+            onClick={() => {
+              handleSelectAmount (amount?.amount)
+            }}
+            className={`px-4 py-2 shadow-lg bg-white text-black font-semibold rounded-md ${ selectedAmount === amount?.amount ? "border-1 border-blue-500" : "border-0" } hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out cursor-pointer`}
+            key={`${amount.id}-${index}`}
+          >
+            {amount.amount.toLocaleString()} FCFA
+          </div>
+        )})}
         {/* amount list selection */}
       </div>
+
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-4 p-4">
+        {/* account type list selection */}
+        {allAccounts?.map((account: AllAccountsType, index: number) => {
+          return (
+          <div
+            onClick={() => {
+              handleSelectAccount (account?.id)
+            }}
+            className={`px-4 py-2 shadow-lg bg-white text-black font-semibold rounded-md ${ selectedAccount === account?.id ? "border-1 border-blue-500" : "border-0" } hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out cursor-pointer`}
+            key={`${account.id}-${index}`}
+          >
+            {/* {amount.amount.toLocaleString()} FCFA */}
+            { account?.name } - { account?.service }
+          </div>
+        )})}
+        {/* amount list selection */}
+      </div>
+
+      <p className='text-red-400'>
+        {
+            selectedAccountError && 
+            selectedAccountError !== "" && 
+            selectedAccountError !== undefined && 
+            selectedAccountError
+        }
+      </p>
+
       <div className="mb-4.5">
         <button
           onClick={ (e) => {
