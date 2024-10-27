@@ -8,11 +8,19 @@ const ProductsList = [
 
 
 export type AccountType = {
+    id?: string | number, 
     operator: string, 
     service: string, 
     abreviation: string, 
     balance?: number, 
     phone_number: number
+}
+
+export type AccountTypeM = {
+    id: string | number, 
+    name: string, 
+    service: string, 
+    abreviation: string, 
 }
 
 
@@ -30,5 +38,20 @@ export const my_accounts: AccountType [] = [
         abreviation: "MoMo", 
         balance: 60000, 
         phone_number: 237675500474
+    }
+]
+
+export const accounts: AccountTypeM [] = [
+    {
+        id: 1,
+        name: "Orange", 
+        service: "Orange Money", 
+        abreviation: "OM", 
+    }, 
+    {
+        id: 2,
+        name: "MTN", 
+        service: "Mobile Money", 
+        abreviation: "MoMo", 
     }
 ]

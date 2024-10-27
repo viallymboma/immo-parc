@@ -1,8 +1,12 @@
 import React from 'react';
 
+import WalletModule from './_components/WalletModule';
+
 const WalletPage = () => {
   return (
-    <div>WalletPage</div>
+    <div>
+      <WalletModule />
+    </div>
   )
 }
 

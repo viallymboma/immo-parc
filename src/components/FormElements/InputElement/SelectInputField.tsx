@@ -35,7 +35,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
     <>
       <label
         htmlFor={name}
-        className={ `block ${ mtStyle ? mtStyle : "mb-2" } text-sm font-medium dark:bg-gray-900 text-gray-900 dark:text-white` }
+        className={ `block ${ mtStyle ? mtStyle : "mb-2" } text-sm font-medium  text-gray-900 dark:text-white` }
       >
         {title}
       </label>
@@ -43,7 +43,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
         name={name}
         {...register}
         id={name}
-        className={`bg-gray-50 text-gray-900 text-sm focus:ring-buttonPrimary focus:border-buttonPrimary block w-full ${ pd ? pd : "py-4" } py-4 px-4 dark:bg-bgColorDark rounded-xl dark:border-gray-400 dark:placeholder-gray-100 dark:text-white dark:focus:ring-buttonPrimary dark:focus:border-buttonPrimary`}
+        className={`dark:bg-gray-900 bg-gray-50 text-gray-900 text-sm focus:ring-buttonPrimary focus:border-buttonPrimary block w-full ${ pd ? pd : "py-4" } py-4 px-4 dark:bg-bgColorDark rounded-xl dark:border-gray-400 dark:placeholder-gray-100 dark:text-white dark:focus:ring-buttonPrimary dark:focus:border-buttonPrimary`}
       >
         <option value="">
           Select an option

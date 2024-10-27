@@ -6,11 +6,11 @@ import {
   useForm,
 } from 'react-hook-form';
 
-import { my_accounts } from '@/components/data/Productsdata';
+import { accounts } from '@/components/data/Productsdata';
 import InputField from '@/components/FormElements/InputElement/InputField';
 import SelectField
   from '@/components/FormElements/InputElement/SelectInputField';
-import { UserSvgIcon } from '@/components/svgs/SvgIcons';
+import { PhoneSvgIcon } from '@/components/svgs/SvgIcons';
 
 type SignupFormType = {
     operator: string, 
@@ -40,24 +40,35 @@ const AddFinancialAccount = () => {
             </div>
             <form onSubmit={handleSubmit (onSubmit)}>
                 <InputField 
-                    label='Nom'
+                    label='Numéro de téléphone'
                     register={
-                        register('phone_number', { required: false, minLength: 3 })
+                        register('phone_number', { 
+                            required: true, 
+                            // pattern: /^(6(9|7|6|5|2|8)[0-9]{7}|2[0-9]{8})/
+                            pattern: /^6(9|7|6|5|2|8)[0-9]{7}$/,
+                        })
                     }
-                    svg={ <UserSvgIcon /> }
-                    type='text'
-                    placeholder='Entrez le nom complet'
+                    svg={ <PhoneSvgIcon /> }
+                    type='number'
+                    placeholder='Entrez le numéro de téléphone'
+                    // error={ errors?.phone_number }
+                    // errorMessage='Fixing message'
                 />
+                <p>
+                    {
+                        errors?.phone_number && "Errreur"
+                    }
+                </p>
 
                 {
-                    my_accounts?.length > 0 && (
+                    accounts?.length > 0 && (
                         <div className="w-full">
                             <h1>
                                 Operateur
                             </h1>
                             <SelectField
                                 name="operator"
-                                options={my_accounts}
+                                options={accounts}
                                 register={register('operator', { 
                                     required: true, 
                                 })}

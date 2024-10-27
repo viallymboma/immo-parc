@@ -43,7 +43,7 @@ const menuGroups = [
           <CalendarSvgIcon />
         ),
         label: "Commissions",
-        route: "/commissions",
+        route: "/dashboard/commissions",
       },
       {
         icon: (
@@ -52,9 +52,9 @@ const menuGroups = [
         label: "Team",
         route: "#",
         children: [
-          { label: "Mon équipe", route: "/teams/view" },
-          { label: "Tree View", route: "/teams/tree-view" },
-          { label: "Folder View", route: "/teams/folder-view" },
+          { label: "Mon équipe", route: "/dashboard/teams/view" },
+          { label: "Tree View", route: "/dashboard/teams/tree-view" },
+          { label: "Folder View", route: "dashboard/teams/folder-view" },
         ],
       },
       {
@@ -65,9 +65,9 @@ const menuGroups = [
         route: "#",
         children: [
           // { label: "Tables", route: "/tables" },
-          { label: "Commissions", route: "/transactions/commissions" },
-          { label: "Withdrawals", route: "/transactions/withdrawals" },
-          { label: "Investissements", route: "/transactions/investments" },
+          { label: "Commissions", route: "dashboard/transactions/commissions" },
+          { label: "Withdrawals", route: "/dashboard/transactions/withdrawals" },
+          { label: "Investissements", route: "/dashboard/transactions/investments" },
         ],
       },
 
@@ -91,14 +91,14 @@ const menuGroups = [
           <ProfileSvgIcon />
         ),
         label: "Profile",
-        route: "/profile",
+        route: "/dashboard/profile",
       }, 
       {
         icon: (
           <CalendarSvgIcon />
         ),
         label: "Utilisateurs",
-        route: "/utilisateurs",
+        route: "/dashboard/utilisateurs",
       },
       // {
       //   icon: (

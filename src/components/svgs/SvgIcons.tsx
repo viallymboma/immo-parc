@@ -791,6 +791,42 @@ export const EditAccountSvgIcon: React.FC<SVGComponentType> = ({ height, width, 
 };
 
 
+export const BackArrowSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 19.92L8.47997 13.4C7.70997 12.63 7.70997 11.37 8.47997 10.6L15 4.07996" stroke="#BABABA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  );
+};
+
+
+export const TotalActifSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.50049 13.75C9.50049 14.72 10.2505 15.5 11.1705 15.5H13.0505C13.8505 15.5 14.5005 14.82 14.5005 13.97C14.5005 13.06 14.1005 12.73 13.5105 12.52L10.5005 11.47C9.91049 11.26 9.5105 10.94 9.5105 10.02C9.5105 9.17999 10.1605 8.48999 10.9605 8.48999H12.8405C13.7605 8.48999 14.5105 9.26999 14.5105 10.24" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.0005 7.5V16.5" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17.0005 3V7H21.0005" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22.0005 2L17.0005 7" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.0005 2C6.48049 2 2.00049 6.48 2.00049 12C2.00049 15.94 4.28049 19.35 7.60049 20.98" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22.0005 12C22.0005 17.52 17.5205 22 12.0005 22" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  );
+};
+
+
+
+export const GainsDuJourSvgIcon: React.FC<SVGComponentType> = ({ height, width, color }) => {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 22H17C20 22 22 20 22 17V12C22 9.3 20.3 7.3 17.8 7C17.6 7 17.3 7 17 7H7C6.7 7 6.5 6.99998 6.2 7.09998C3.6 7.39998 2 9.3 2 12C2 12.3 2 12.7 2 13" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.8002 4.79997C17.4002 5.39997 17.7002 6.19998 17.8002 6.99998C17.6002 6.99998 17.3002 6.99998 17.0002 6.99998H7.0002C6.7002 6.99998 6.5002 6.99996 6.2002 7.09996C6.3002 6.79996 6.5002 6.59997 6.8002 6.29997L10.0002 2.99998C10.8202 2.17998 11.9102 1.83996 12.9602 1.97996" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 12.5H19C17.9 12.5 17 13.4 17 14.5C17 15.6 17.9 16.5 19 16.5H22" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5.8001 21.4C7.5701 21.4 9.0001 19.97 9.0001 18.2C9.0001 16.43 7.5701 15 5.8001 15C4.0301 15 2.6001 16.43 2.6001 18.2C2.6001 19.97 4.0301 21.4 5.8001 21.4Z" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 22L3 21" stroke={ color ? color : "#BABABA"} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+  );
+};
 
 
 
