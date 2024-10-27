@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 
+import { useRouter } from 'next/navigation';
 import {
   SubmitHandler,
   useForm,
@@ -30,8 +31,10 @@ const SignupForm = () => {
     formState: {errors, isValid }, 
   } = useForm <SignupFormType> (); 
 
+  const router = useRouter (); 
+
   const onSubmit: SubmitHandler<SignupFormType> = async (data) => {
-    // handling
+    router.push ("/auth/signin");
   }
 
   return (

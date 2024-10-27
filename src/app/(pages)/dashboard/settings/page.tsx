@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 
-import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb';
-import SettingBoxes from '@/components/SettingBoxes';
+import SettingsModule from './_components/SettingsModule';
 
 export const metadata: Metadata = {
   title: "Immo-parc Settings Page | NextAdmin - Next.js Dashboard c",
@@ -10,9 +9,8 @@ export const metadata: Metadata = {
 
 const Settings = () => {
   return (
-    <div className="mx-auto w-full max-w-[1080px]">
-      <Breadcrumb pageName="Settings" />
-      <SettingBoxes />
+    <div>
+      <SettingsModule />
     </div>
   );
 };

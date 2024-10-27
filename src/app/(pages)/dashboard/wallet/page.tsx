@@ -6,7 +6,7 @@ import WalletModule from './_components/WalletModule';
 
 const WalletPage = () => {
   return (
-    <div>
+    <div className='mb-[5rem]'>
       <ReturnHeader 
           headerName='Mon Portefeuille'
           returnBtnLabel='Retour'

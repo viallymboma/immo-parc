@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import ReturnHeader from '../Sidebar/ReturnHeader';
 import {
   CameraSvgIcon,
   EditSvgIcon,
@@ -13,6 +14,11 @@ import {
 const ProfileBox = () => {
   return (
     <>
+      <ReturnHeader 
+          headerName='Mon Profile'
+          returnBtnLabel='Retour'
+          returnLink='/dashboard'
+      />
       <div className="overflow-hidden rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
         <div className="relative z-20 h-35 md:h-65">
           <Image

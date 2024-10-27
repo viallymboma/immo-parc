@@ -5,7 +5,12 @@ import React from 'react';
 import Link from 'next/link';
 
 import {
+  WalletElemenetType,
+  walletNavElement,
+} from '@/components/data/Productsdata';
+import {
   BlockedEyeSvgIcon,
+  ChevronRightSvgIcon,
   EyeSvgIcon,
   GainsDuJourSvgIcon,
   TotalActifSvgIcon,
@@ -94,6 +99,23 @@ const WalletModule = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='flex flex-col gap-3 '>
+        {
+            walletNavElement?.map((element: WalletElemenetType, index: number) => {
+                return (
+                    <Link key={`${ element?.id } - ${ index }`} href={`${ element?.route }`} className='flex flex-row justify-between py-3 rounded-md border-b-1 border-b-slate-200'>
+                        <h1>{ element?.tooltip }</h1>
+                        <div className='flex flex-row items-center'>
+                          <span className=''>
+                            { element?.amount }
+                          </span>
+                          <ChevronRightSvgIcon />
+                        </div>
+                    </Link>
+                )
+            })
+        }
       </div>
     </div>
   )

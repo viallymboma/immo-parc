@@ -1,11 +1,18 @@
 import React from 'react';
 
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
+
 import InviteFriendsModule from './_components/InviteFriendsModule';
 
 const InviteFrienPage = () => {
 
     return (
         <div>
+            <ReturnHeader 
+                headerName="Mon Lien d'Invitation"
+                returnBtnLabel='Retour'
+                returnLink='/dashboard'
+            />
             <InviteFriendsModule />
         </div>
     );

@@ -10,6 +10,54 @@ import {
 // import OrangeMoneySvgIcon from "@/components/svgs/SvgIcons/OrangeMoneySvgIcon"
 
 
+export type WalletElemenetType = {
+    id?: number | string; 
+    // icon: any, 
+    amount?: number;
+    tooltip: string; 
+    route: string;
+}
+
+export const walletNavElement: WalletElemenetType [] = [
+    {
+        id: 1,
+        // icon: (
+        //     <Dashboard2SvgIcon />
+        // ), 
+        amount: 50000, 
+        tooltip: "Total des gains", 
+        route: "/dashboard/transactions/commissions"
+    }, 
+    {
+        id: 2,
+        // icon: (
+        //     <ProductsSvgIcon />
+        // ), 
+        amount: 50000, 
+        tooltip: "Totals des retraits", 
+        route: "/dashboard/transactions/withdrawals"
+    }, 
+    {
+        id: 3,
+        // icon: (
+        //     <WaletSvgIcon />
+        // ), 
+        amount: 50000, 
+        tooltip: "Total des recharges", 
+        route: "/dashboard/transactions/funding-account/"
+    }, 
+    // {
+    //     id: 4,
+    //     // icon: (
+    //     //     <SettingSvgIcon />
+    //     // ), 
+    //     amount: 50000, 
+    //     tooltip: "Mon compte", 
+    //     route: "/dashboard/my-account"
+    // }
+]
+
+
 
 export type BottomElemenetType = {
     id?: number | string, 

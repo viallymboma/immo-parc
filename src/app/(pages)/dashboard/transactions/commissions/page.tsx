@@ -1,8 +1,19 @@
 import React from 'react';
 
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
+
+import CommissionModule from './_components/CommissionModule';
+
 const CommissionsPage = () => {
   return (
-    <div>CommissionsPage</div>
+    <div>
+      <ReturnHeader 
+          headerName='Mes Gains'
+          returnBtnLabel='Retour'
+          returnLink='/dashboard'
+      />
+      <CommissionModule />
+    </div>
   )
 }
 

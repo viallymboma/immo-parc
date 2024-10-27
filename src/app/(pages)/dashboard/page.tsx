@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Metadata } from 'next';
 
+import ECommerce from '@/components/Dashboard/E-commerce';
+
 // import ECommerce from '@/components/Dashboard/E-commerce';
 
 export const metadata: Metadata = {
@@ -14,8 +16,7 @@ export default function Home() {
   return (
     <>
       {/* <DefaultLayout> */}
-        {/* <ECommerce /> */}
-        hello
+        <ECommerce />
       {/* </DefaultLayout> */}
     </>
   );

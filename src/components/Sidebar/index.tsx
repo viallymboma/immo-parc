@@ -14,7 +14,7 @@ import {
   DashboardSvgIcon,
   FormsSvgIcon,
   GoldenLongVersion,
-  HamburgerMenuSvgIcon,
+  NewHamburgerSvgIcon,
   ProfileSvgIcon,
   TablesSvgIcon,
 } from '../svgs/SvgIcons';
@@ -33,7 +33,7 @@ const menuGroups = [
           <DashboardSvgIcon />
         ),
         label: "Tableau de Bord",
-        route: "/",
+        route: "/dashboard",
         // children: [
         //   { label: "eCommerce", route: "/" },
         // ],
@@ -151,33 +151,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       >
         {/* <!-- SIDEBAR HEADER --> */}
         <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5 xl:py-10">
-          <Link href="/">
-            {/* <Image
-              width={176}
-              height={32}
-              src={"/images/logo/logo-dark.svg"}
-              alt="Logo"
-              priority
-              className="dark:hidden"
-              style={{ width: "auto", height: "auto" }}
-            /> */}
+          <Link href="/dashboard">
             <GoldenLongVersion width="176" height="32" />
-            {/* <Image
-              width={176}
-              height={32}
-              src={"/images/logo/logo.svg"}
-              alt="Logo"
-              priority
-              className="hidden dark:block"
-              style={{ width: "auto", height: "auto" }}
-            /> */}
           </Link>
 
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="block lg:hidden"
           >
-            <HamburgerMenuSvgIcon />
+            {/* <HamburgerMenuSvgIcon /> */}
+            <NewHamburgerSvgIcon />
           </button>
 
         </div>
