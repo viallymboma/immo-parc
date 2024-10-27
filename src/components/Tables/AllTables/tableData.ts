@@ -217,5 +217,59 @@ const columns = [
       email: "mia.robinson@example.com",
     },
   ];
-  
-  export {columns, users, statusOptions};
+
+// RECHARGES =========================================
+const columnsRecharges = [
+  {name: "ID", uid: "id", sortable: true},
+  {name: "Montan", uid: "amount", sortable: true},
+  {name: "Operateur", uid: "operator", sortable: true},
+  {name: "Service", uid: "service", sortable: true},
+  {name: "Numero", uid: "phone_number", sortable: true},
+  {name: "DATE", uid: "date_created"},
+  {name: "STATUS", uid: "status", sortable: true},
+  {name: "ACTIONS", uid: "actions"},
+];
+
+export type RechargeType = {
+  id: string | number;
+  amount: number; 
+  operator: string,
+  service: string,
+  phone_number: number,
+  date_created: string,
+  status: string,
+}
+
+const recharges: RechargeType [] = [
+  {
+    id: 1,
+    amount: 5000,
+    operator: "Orange",
+    service: "Orange Money",
+    phone_number: 237695500474,
+    date_created: "2024-10-27T14:46:35.099481",
+    status: "active",
+  },
+  {
+    id: 2,
+    amount: 5000,
+    operator: "Orange",
+    service: "Orange Money",
+    phone_number: 237695500474,
+    date_created: "2024-10-27T14:46:35.099481",
+    status: "paused",
+  },
+  {
+    id: 3,
+    amount: 5000,
+    operator: "MTN",
+    service: "MTN Mobile Money",
+    phone_number: 237697500474,
+    date_created: "2024-10-27T14:46:35.099481",
+    status: "active",
+  },
+];
+
+// END RECHARGES ==========================================================
+
+export { columns, columnsRecharges, recharges, statusOptions, users };

@@ -41,6 +41,35 @@ export const my_accounts: AccountType [] = [
     }
 ]
 
+
+export type SuggestedAmounts = {
+    id: string | number, 
+    amount: number, 
+}
+
+export const suggestedAmounts: SuggestedAmounts [] = [
+    {
+        id: 1, 
+        amount: 5000, 
+    }, 
+    {
+        id: 2, 
+        amount: 20000, 
+    }, 
+    {
+        id: 3, 
+        amount: 58000, 
+    }, 
+    {
+        id: 4, 
+        amount: 168000, 
+    }, 
+    {
+        id: 5, 
+        amount: 398000, 
+    }, 
+]
+
 export const accounts: AccountTypeM [] = [
     {
         id: 1,

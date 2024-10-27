@@ -2,6 +2,7 @@
 import React from 'react';
 
 import ReturnHeader from '@/components/Sidebar/ReturnHeader';
+import RechargesTable from '@/components/Tables/AllTables/RechargesTable';
 
 const FundingAccountModule = () => {
   return (
@@ -12,7 +13,12 @@ const FundingAccountModule = () => {
             returnLink='/dashboard/wallet'
         />
         <div>
-            Recharge
+            <div>
+              <h1>RechargesTable</h1>
+            </div>
+            <div >
+              <RechargesTable />
+            </div>
         </div>
     </div>
   )

@@ -42,7 +42,7 @@ const WalletModule = () => {
       </div>
 
       <div className='flex flex-row justify-between'>
-        <Link className=' bg-sky-300 text-white rounded-2xl px-4 py-2' href="/dashboard/transactions/funding-account">
+        <Link className=' bg-sky-300 text-white rounded-2xl px-4 py-2' href="/dashboard/transactions/funding-account/add">
           Recharge
         </Link>
         <Link className=' bg-sky-300 text-white rounded-2xl px-4 py-2' href="/dashboard/transactions/withdrawals">
