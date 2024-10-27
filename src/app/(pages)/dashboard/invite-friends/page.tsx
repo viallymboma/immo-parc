@@ -8,7 +8,7 @@ import QRCodeComponent from '@/components/qr-code/QRCodeComponent';
 import InviteFriend from '../../../../../public/imgs/in-icon.png';
 
 const InviteFrienPage = () => {
-    const url = "https://example.com";
+    const url = `http://localhost:3000/auth/signup?supervisor=695500474`;
     const qrRef = useRef<HTMLDivElement>(null);
 
     // Function to save the QR code as an image
