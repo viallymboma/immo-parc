@@ -1,7 +1,10 @@
 "use client";
-import jsVectorMap from "jsvectormap";
-import React, { useEffect } from "react";
-import "../../js/us-aea-en";
+// import '../../js/us-aea-en';
+import '../../js/us-aea-en';
+
+import React, { useEffect } from 'react';
+
+import jsVectorMap from 'jsvectormap';
 
 const MapOne: React.FC = () => {
   useEffect(() => {
@@ -48,7 +51,7 @@ const MapOne: React.FC = () => {
 
     return () => {
       if (vectorMapOne) {
-        vectorMapOne.destroy();
+        vectorMapOne?.destroy();
       } else {
         console.error("Vector map instance not found during cleanup");
       }

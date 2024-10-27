@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function GoogleSigninButton({ text }: { text: string }) {
   return (
@@ -38,7 +38,7 @@ export default function GoogleSigninButton({ text }: { text: string }) {
           </defs>
         </svg>
       </span>
-      {text} with Google
+      {text} avec Google
     </button>
   );
 }

@@ -1,37 +1,29 @@
 "use client";
-import "jsvectormap/dist/css/jsvectormap.css";
-import "flatpickr/dist/flatpickr.min.css";
-import "@/css/satoshi.css";
-import "@/css/style.css";
-import React, { useEffect, useState } from "react";
-// import { appWithTranslation } from 'next-i18next';
-import Loader from "@/components/common/Loader";
-import DefaultLayout from "@/components/Layouts/DefaultLaout";
+import 'jsvectormap/dist/css/jsvectormap.css';
+import 'flatpickr/dist/flatpickr.min.css';
+import '@/css/satoshi.css';
+import '@/css/style.css';
 
-const RootLayout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [loading, setLoading] = useState<boolean>(true);
+import React, {
+  useEffect,
+  useState,
+} from 'react';
 
-  // const pathname = usePathname();
+import Loader from '@/components/common/Loader';
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
+const RootLayout = ({ children }: Readonly<{ children: React.ReactNode; }>) => {
+    const [loading, setLoading] = useState<boolean>(true);
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 1000);
+    }, []);
 
-  return (
-    <html lang="en">
-      <body>
-        <DefaultLayout>
-        {loading ? <Loader /> : children}
-        </DefaultLayout>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body>
+                {loading ? <Loader /> : children}
+            </body>
+        </html>
+    );
 }
 
-// export default appWithTranslation(RootLayout);
 export default RootLayout;

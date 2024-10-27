@@ -52,7 +52,7 @@ const menuGroups = [
         label: "Team",
         route: "#",
         children: [
-          { label: "My Team", route: "/teams/view" },
+          { label: "Mon équipe", route: "/teams/view" },
           { label: "Tree View", route: "/teams/tree-view" },
           { label: "Folder View", route: "/teams/folder-view" },
         ],
@@ -214,3 +214,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 };
 
 export default Sidebar;
+
+
+// R5sRCD5Fj.zqm
+// https://sunruncm.cc/pages/login/index?invite=urgihmuc

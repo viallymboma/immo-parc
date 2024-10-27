@@ -1,5 +1,6 @@
-import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
+import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 const { nextui } = require('@nextui-org/react');
 
 const config: Config = {
@@ -25,7 +26,8 @@ const config: Config = {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
-        primary: "#5750F1",
+        primary: "#DDB71E",
+        // #5750F1
         stroke: "#E6EBF1",
         "stroke-dark": "#27303E",
         dark: {

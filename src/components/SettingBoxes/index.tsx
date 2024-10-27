@@ -1,13 +1,19 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
 
 const SettingBoxes = () => {
   return (
     <>
       <div className="grid grid-cols-5 gap-8">
         <div className="col-span-5 xl:col-span-3">
+          <div className='mb-3'>
+            <Link href={"/dashboard/invite-friends"}>
+              Invite a friend
+            </Link>
+          </div>
           <div className="rounded-[10px] border border-stroke bg-white shadow-1 dark:border-dark-3 dark:bg-gray-dark dark:shadow-card">
             <div className="border-b border-stroke px-7 py-4 dark:border-dark-3">
               <h3 className="font-medium text-dark dark:text-white">

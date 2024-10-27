@@ -12,11 +12,8 @@ const Settings = () => {
   return (
     <div className="mx-auto w-full max-w-[1080px]">
       <Breadcrumb pageName="Settings" />
-
       <SettingBoxes />
     </div>
-    // <DefaultLayout>
-    // </DefaultLayout>
   );
 };
 

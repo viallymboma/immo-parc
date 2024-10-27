@@ -1,7 +1,10 @@
 "use client";
-import React, { useState, ReactNode } from "react";
-import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header";
+import React, { useState } from 'react';
+
+import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
+
+import BottomNavigation from '../Sidebar/BottomNavigation';
 
 export default function DefaultLayout({
   children,
@@ -12,7 +15,7 @@ export default function DefaultLayout({
   return (
     <>
       {/* <!-- ===== Page Wrapper Star ===== --> */}
-      <div className="flex h-screen overflow-hidden">
+      <div className="flex h-screen relative overflow-hidden">
         {/* <!-- ===== Sidebar Star ===== --> */}
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         {/* <!-- ===== Sidebar End ===== --> */}
@@ -32,6 +35,13 @@ export default function DefaultLayout({
           {/* <!-- ===== Main Content End ===== --> */}
         </div>
         {/* <!-- ===== Content Area End ===== --> */}
+
+        {/* <!-- ===== Sidebar Star ===== --> */}
+        <div className='z-[1000] bottom-0  w-full absolute'>
+          <BottomNavigation />
+        </div>
+        {/* <!-- ===== Sidebar End ===== --> */}
+
       </div>
       {/* <!-- ===== Page Wrapper End ===== --> */}
     </>
