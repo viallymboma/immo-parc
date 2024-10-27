@@ -23,7 +23,7 @@ const FundingForm = () => {
 
   const router = useRouter ()
 
-  console.log(selectedAccount, selectedAmount , "uuuuuuuuuuuuuuu")
+  // console.log(selectedAccount, selectedAmount , "uuuuuuuuuuuuuuu")
 
   const handleInputAmount = (e: any) => {
     setSelectedAmount (e.target.value)

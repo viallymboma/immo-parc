@@ -1,17 +1,14 @@
-import MOMOImage from '../../../public/operators/momo1-logo.jpg';
-import OMImage from '../../../public/operators/orange1-logo.jpg';
 import {
   Dashboard2SvgIcon,
+  MomoSvgIcon,
+  OrangeMoneySvgIcon,
   ProductsSvgIcon,
   SettingSvgIcon,
   WaletSvgIcon,
 } from '../svgs/SvgIcons';
 
-const ProductsList = [
-    {
+// import OrangeMoneySvgIcon from "@/components/svgs/SvgIcons/OrangeMoneySvgIcon"
 
-    }
-]
 
 
 export type BottomElemenetType = {
@@ -146,6 +143,8 @@ export type AllAccountsType = {
     balance?: number; 
     phone_number?: number; 
     image?: any; 
+    primaryColor?: string;
+    secondaryColor?: string; 
 }
 
 export const allAccounts: AllAccountsType [] = [
@@ -156,7 +155,11 @@ export const allAccounts: AllAccountsType [] = [
         abreviation: "OM", 
         balance: 50000, 
         phone_number: 237695500474,
-        image: `${ OMImage }`
+        image: (
+            <OrangeMoneySvgIcon height='72' width='128' />
+        ),
+        primaryColor: "#ff7903", 
+        secondaryColor: "#000", 
     }, 
     {
         id: 2,
@@ -165,20 +168,64 @@ export const allAccounts: AllAccountsType [] = [
         abreviation: "MoMo", 
         balance: 60000, 
         phone_number: 237675500474, 
-        image: `${ MOMOImage }`, 
+        image: (
+            <MomoSvgIcon height='72' width='128' />
+        ),
+        primaryColor: "#facd0d", 
+        secondaryColor: "#005074", 
     }, 
     {
         id: 3,
         name: "Orange", 
         service: "Orange Money", 
         abreviation: "OM", 
-        image: `${ OMImage }`
+        image: (
+            <OrangeMoneySvgIcon height='72' width='128' />
+        ),
+        primaryColor: "#ff7903", 
+        secondaryColor: "#000", 
     }, 
     {
         id: 4,
         name: "MTN", 
         service: "Mobile Money", 
         abreviation: "MoMo", 
-        image: `${ MOMOImage }`, 
+        image: (
+            <MomoSvgIcon height='72' width='128' />
+        ),
+        primaryColor: "#facd0d", 
+        secondaryColor: "#005074", 
     }
 ]
+
+
+
+// export type BottomElemenetType = {
+//     id?: number;
+//     icon?: any, 
+//     tooltip: string, 
+//     route: string,
+// }
+
+// export const bottomNavElement: BottomElemenetType [] = [
+//     {
+//         id: 1, 
+//         tooltip: "Mes compte financier", 
+//         route: "/dashboard/financial-accounts"
+//     }, 
+//     {
+//         id: 2, 
+//         tooltip: "Mon Profile", 
+//         route: "/dashboard/profile"
+//     }, 
+//     {
+//         id: 3, 
+//         tooltip: "Inviter un ami", 
+//         route: "/dashboard/invite-friends"
+//     }, 
+//     {
+//         id: 4, 
+//         tooltip: "Mes Infos", 
+//         route: "/dashboard/settings"
+//     }
+// ]
