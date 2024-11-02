@@ -14,11 +14,11 @@ const BottomNavigation = () => {
             {
                 bottomNavElement?.map((boElement: BottomElemenetType, index: number) => {
                     return (
-                        <Link key={`${boElement.id}-${index}`} href={ `${ boElement?.route }` } className='flex flex-col justify-center items-center hover:bg-slate-600'>
+                        <Link key={`${boElement.id}-${index}`} href={ `${ boElement?.route }` } className='flex flex-col justify-center items-center hover:rounded-full px-3 py-1 hover:bg-slate-600'>
                             <span>
                                 { boElement?.icon }
                             </span>
-                            <span>
+                            <span className='text-[13px]'>
                                 { boElement?.tooltip }
                             </span>
                         </Link>

@@ -3,6 +3,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb';
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
 import UserTable from '@/components/Tables/AllTables/UserTable';
 
 export const metadata: Metadata = {
@@ -13,8 +14,15 @@ export const metadata: Metadata = {
 const TeamPageView = () => {
   return (
     <div className="mx-auto max-w-7xl">
-        <Breadcrumb pageName="Team View" />
+      <Breadcrumb pageName="Visuel de mon equipe" />
+      <ReturnHeader
+        headerName='Mon equipe'
+        returnBtnLabel='Retour'
+        returnLink='/dashboard'
+      />
+      <div>
         <UserTable />
+      </div>
     </div>
   )
 }
