@@ -47,17 +47,17 @@ const IntermediateComponent = () => {
     return (
         <div className='relative overflow-y-auto' onScroll={handleScroll}>
             <div>
-                <div className=''>
+                <div className=' flex gap-2'>
                     {/* <button onClick={() => showTreeView ()} className={`${ displayView ? "bg-white" : "bg-transparent" } `}>
                         <NewHamburgerSvgIcon color={`${ displayView ? "#000" : "#fff" }`} />
                     </button>
                     <button onClick={() => showFolderView ()} className={`${ displayView ? "bg-transparent" : "bg-white" } `}>
                         <Dashboard2SvgIcon color={`${ displayView ? "#fff" : "#000" }`}  />
                     </button> */}
-                    <button onClick={() => showTreeView ()} className={`${ colorHiglight } `}>
-                        <NewHamburgerSvgIcon color={`${ colorHiglight2 }`} />
+                    <button onClick={() => showTreeView ()} style={{ backgroundColor: `${ colorHiglight }` }} className={`p-2 rounded-full `}>
+                        <NewHamburgerSvgIcon  color={`${ colorHiglight2 }`} />
                     </button>
-                    <button onClick={() => showFolderView ()} className={`${ colorHiglight2 } `}>
+                    <button onClick={() => showFolderView ()} style={{ backgroundColor: `${ colorHiglight2 }` }} className={`p-2 rounded-full `}>
                         <Dashboard2SvgIcon color={`${ colorHiglight }`}  />
                     </button>
                 </div>
