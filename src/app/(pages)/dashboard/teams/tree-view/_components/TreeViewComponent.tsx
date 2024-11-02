@@ -226,13 +226,13 @@ const TreeViewComponent = () => {
         pathFunc="step"
         nodeSize={{ x: 150, y: 100 }}
         renderCustomNodeElement={renderCustomNodeElement}
-        styles={{
-          links: {
-            stroke: 'white', // Change this to the color you want (e.g., 'blue', '#3498db')
-            strokeWidth: 2, // Adjust the width of the lines
-            strokeDasharray: '5,5', // Optional: dashed lines (5px line, 5px space)
-          },
-        }}
+        // styles={{
+        //   links: {
+        //     stroke: 'white', // Change this to the color you want (e.g., 'blue', '#3498db')
+        //     strokeWidth: 2, // Adjust the width of the lines
+        //     strokeDasharray: '5,5', // Optional: dashed lines (5px line, 5px space)
+        //   },
+        // }}
       />
 
       {/* Popup for displaying user details */}
@@ -241,7 +241,7 @@ const TreeViewComponent = () => {
           <div className="bg-white p-6 rounded-md shadow-lg w-64 text-center">
             <h3 className="text-xl font-bold mb-4">{selectedUser.name}</h3>
             <p>ID: {selectedUser.id}</p>
-            <p>Subscription Amount: ${selectedUser.subscriptionAmount}</p>
+            <p>Subscription Amount: {selectedUser.subscriptionAmount} FCFA</p>
             <p>Position: {selectedUser.position}</p>
             <p>Package: {selectedUser.packageName}</p>
             {selectedUser.parentName && <p>Parent: {selectedUser.parentName} (ID: {selectedUser.parentId})</p>}
