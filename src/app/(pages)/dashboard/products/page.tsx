@@ -1,8 +1,24 @@
 import React from 'react';
 
+import Breadcrumb from '@/components/Breadcrumbs/Breadcrumb';
+import ReturnHeader from '@/components/Sidebar/ReturnHeader';
+
+import PropertiesModule from './_components/PropertiesModule';
+
 const ProductsPage = () => {
     return (
-        <div>ProductsPage</div>
+
+        <div className="mx-auto max-w-7xl mb-[5rem]">
+            <Breadcrumb pageName="Les proprietes" />
+            <ReturnHeader
+                headerName='Proprietes'
+                returnBtnLabel='Retour'
+                returnLink='/dashboard'
+            />
+            <div>
+                <PropertiesModule />
+            </div>
+        </div>
     )
 }
 

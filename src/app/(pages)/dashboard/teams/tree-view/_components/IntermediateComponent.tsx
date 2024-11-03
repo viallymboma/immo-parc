@@ -58,7 +58,7 @@ const IntermediateComponent = () => {
                         <NewHamburgerSvgIcon  color={`${ colorHiglight2 }`} />
                     </button>
                     <button onClick={() => showFolderView ()} style={{ backgroundColor: `${ colorHiglight2 }` }} className={`p-2 rounded-full `}>
-                        <Dashboard2SvgIcon color={`${ colorHiglight }`}  />
+                        <Dashboard2SvgIcon color={`${ colorHiglight }`} />
                     </button>
                 </div>
             </div>
