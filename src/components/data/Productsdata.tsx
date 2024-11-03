@@ -81,7 +81,7 @@ export const bottomNavElement: BottomElemenetType [] = [
             <ProductsSvgIcon />
         ), 
         tooltip: "Produits", 
-        route: "/dashboard/products"
+        route: "/dashboard/properties"
     }, 
     {
         id: 3,
