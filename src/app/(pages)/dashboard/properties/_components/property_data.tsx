@@ -46,6 +46,7 @@ export const propertyData = [
         bathrooms: 2,
         city: "Yaounde",
         country: "Cameroun",
+        category: "Apartment",  // New category
         pircture: [
             PhotoOneUrl1,
             PhotoOneUrl3,
@@ -56,13 +57,14 @@ export const propertyData = [
     }, 
     {
         id: "bed24h92ud8j029jo2h49h29294e8",
-        price: 50000000,
-        location: "Bastos",
-        size: 360,
-        bedrooms: 3,
-        bathrooms: 2,
-        city: "Yaounde",
+        price: 75000000,
+        location: "Mbankolo",
+        size: 420,
+        bedrooms: 4,
+        bathrooms: 3,
+        city: "Douala",
         country: "Cameroun",
+        category: "House",
         pircture: [
             PhotoOneUrl2,
             PhotoOneUrl4,

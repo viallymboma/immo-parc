@@ -12,7 +12,7 @@ const PropertyDetailsPage = () => {
             <ReturnHeader
                 headerName='Details'
                 returnBtnLabel='Retour'
-                returnLink='/dashboard'
+                returnLink='/dashboard/properties'
             />
             <div>
                 <PropertyDetails />
