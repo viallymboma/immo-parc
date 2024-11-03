@@ -16,7 +16,7 @@ const AddFundsModule = () => {
             returnLink='/dashboard/transactions/funding-account'
         />
         <div>
-            <FundingForm />
+          <FundingForm />
         </div>
     </div>
   )
