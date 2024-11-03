@@ -55,7 +55,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
         )) 
         :
         momentOp?.map((option: any) => (
-          <option key={option?.id} value={option?.id}>
+          <option key={option?.id} value={option.JSON.stringify()}>
             {option.name}
           </option>
         ))

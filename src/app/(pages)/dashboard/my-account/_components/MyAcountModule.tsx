@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import {
   BottomElemenetType,
-  bottomNavElement,
+  bottomNavElementInAccount,
 } from '@/components/data/Productsdata';
 import { ChevronRightSvgIcon } from '@/components/svgs/SvgIcons';
 
@@ -28,7 +28,7 @@ const MyAcountModule = () => {
             </div>
             <div className='flex flex-col gap-3 '>
                 {
-                    bottomNavElement?.map((element: BottomElemenetType, index: number) => {
+                    bottomNavElementInAccount?.map((element: BottomElemenetType, index: number) => {
                         return (
                             <Link key={`${ element?.id } - ${ index }`} href={`${ element?.route }`} className='flex flex-row justify-between py-3 rounded-md border-b-1 border-b-slate-200'>
                                 <h1>{ element?.tooltip }</h1>

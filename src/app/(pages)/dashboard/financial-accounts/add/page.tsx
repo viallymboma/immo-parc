@@ -6,7 +6,10 @@ import {
   useForm,
 } from 'react-hook-form';
 
-import { accounts } from '@/components/data/Productsdata';
+import {
+  accounts,
+  AccountTypeM,
+} from '@/components/data/Productsdata';
 import InputField from '@/components/FormElements/InputElement/InputField';
 import SelectField
   from '@/components/FormElements/InputElement/SelectInputField';
@@ -32,7 +35,21 @@ const AddFinancialAccount = () => {
     } = useForm <SignupFormType> (); 
 
     const onSubmit: SubmitHandler<SignupFormType> = async (data) => {
-    // handling
+
+        const findElement = accounts?.find((account: AccountTypeM, index: number) => {
+            return account?.id === parseInt(data?.operator)
+        })
+
+        const my_account = {
+            id: 4,
+            operator: data?.operator, 
+            service: findElement?.service, 
+            abreviation: findElement?.abreviation, 
+            balance: 0, 
+            phone_number: data?.phone_number
+        }
+
+        console.log(my_account, "kkkkkkkkkkkkk")
     }
     return (
         <div>
@@ -44,11 +61,13 @@ const AddFinancialAccount = () => {
             <form onSubmit={handleSubmit (onSubmit)}>
                 <InputField 
                     label='Numéro de téléphone'
+                    name="phone_number"
                     register={
                         register('phone_number', { 
                             required: true, 
-                            // pattern: /^(6(9|7|6|5|2|8)[0-9]{7}|2[0-9]{8})/
-                            pattern: /^6(9|7|6|5|2|8)[0-9]{7}$/,
+                            pattern: /^(6(9|7|6|5|2|8)[0-9]{7}|2[0-9]{8})/ // THIS VALIDATES EVEN CAMTEL NUMBER
+                            // 621167987
+                            // pattern: /^6(9|7|6|5|2|8)[0-9]{7}$/, // THIS VALIDATE WITHOUT CAMTEL NUMBER
                         })
                     }
                     svg={ <PhoneSvgIcon /> }
@@ -57,9 +76,9 @@ const AddFinancialAccount = () => {
                     // error={ errors?.phone_number }
                     // errorMessage='Fixing message'
                 />
-                <p>
+                <p className="mt-1 text-sm text-red-400">
                     {
-                        errors?.phone_number && "Errreur"
+                        errors?.phone_number && "Inserez un MTN, Orange Ou Camtel"
                     }
                 </p>
 

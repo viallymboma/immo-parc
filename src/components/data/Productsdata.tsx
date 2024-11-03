@@ -101,6 +101,16 @@ export const bottomNavElement: BottomElemenetType [] = [
     }
 ]
 
+// Create bottomNavElementInAccount based on bottomNavElement with modified route for the fourth element
+export const bottomNavElementInAccount: BottomElemenetType[] = bottomNavElement.map((element) =>
+    element.id === 4
+        ? { ...element, route: "/dashboard/financial-accounts" }
+        : element
+);
+
+
+// route: "/dashboard/financial-accounts"
+
 
 export type AccountType = {
     id?: string | number, 
@@ -114,8 +124,8 @@ export type AccountType = {
 export type AccountTypeM = {
     id: string | number, 
     name: string, 
-    service: string, 
-    abreviation: string, 
+    service?: string, 
+    abreviation?: string, 
 }
 
 
