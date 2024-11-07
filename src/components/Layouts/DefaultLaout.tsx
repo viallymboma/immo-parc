@@ -21,7 +21,7 @@ export default function DefaultLayout({
         {/* <!-- ===== Sidebar End ===== --> */}
 
         {/* <!-- ===== Content Area Star ===== --> */}
-        <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+        <div className="relative flex flex-1 flex-col h-screen overflow-y-auto overflow-x-hidden ">
           {/* <!-- ===== Header Star ===== --> */}
           <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
           {/* <!-- ===== Header End ===== --> */}
@@ -33,14 +33,14 @@ export default function DefaultLayout({
             </div>
           </main>
           {/* <!-- ===== Main Content End ===== --> */}
+          {/* <!-- ===== Sidebar Star ===== --> */}
+          <div className='z-[1000] sticky bottom-0 w-full '>
+            <BottomNavigation />
+          </div>
+          {/* <!-- ===== Sidebar End ===== --> */}
         </div>
         {/* <!-- ===== Content Area End ===== --> */}
 
-        {/* <!-- ===== Sidebar Star ===== --> */}
-        <div className='z-[1000] bottom-0  w-full absolute'>
-          <BottomNavigation />
-        </div>
-        {/* <!-- ===== Sidebar End ===== --> */}
 
       </div>
       {/* <!-- ===== Page Wrapper End ===== --> */}

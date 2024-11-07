@@ -101,12 +101,25 @@ export const bottomNavElement: BottomElemenetType [] = [
     }
 ]
 
+const addElement = [
+    ...bottomNavElement, 
+    {
+        id: 5,
+        icon: (
+            <SettingSvgIcon />
+        ), 
+        tooltip: "Inviter quelqu'un", 
+        route: "/dashboard/invite-friends"
+    }
+]
+
 // Create bottomNavElementInAccount based on bottomNavElement with modified route for the fourth element
-export const bottomNavElementInAccount: BottomElemenetType[] = bottomNavElement.map((element) =>
+export const bottomNavElementInAccount: BottomElemenetType[] = addElement.map((element) =>
     element.id === 4
         ? { ...element, route: "/dashboard/financial-accounts" }
         : element
 );
+
 
 
 // route: "/dashboard/financial-accounts"
