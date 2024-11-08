@@ -34,7 +34,7 @@ export default function DefaultLayout({
           </main>
           {/* <!-- ===== Main Content End ===== --> */}
           {/* <!-- ===== Sidebar Star ===== --> */}
-          <div className='z-[1000] sticky bottom-0 w-full '>
+          <div className='z-[1000] absolute bottom-0 w-full '>
             <BottomNavigation />
           </div>
           {/* <!-- ===== Sidebar End ===== --> */}
