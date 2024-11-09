@@ -11,7 +11,7 @@ const ProductsPage = () => {
         <div className="mx-auto max-w-7xl mb-[5rem]">
             <Breadcrumb pageName="Les proprietes" />
             <ReturnHeader
-                headerName='Proprietes'
+                headerName=' '
                 returnBtnLabel='Retour'
                 returnLink='/dashboard'
             />

@@ -11,8 +11,16 @@ import {
 import PropertyCard from './PropertyCard';
 
 const PropertiesModule = () => {
-    const categories = ["All", "Apartment", "House", "Villa", "Estate", "Mansion"];
-    const [selectedCategory, setSelectedCategory] = useState("All");
+    // const categories = ["All", "Apartment", "House", "Villa", "Estate", "Mansion"];
+    // const categories_ = propertyData?.map((prop: PropertyDataType) => {
+    //     return prop?.category
+    // })
+
+    const categories_ = Array.from(new Set(
+        propertyData.map((prop: PropertyDataType) => prop?.category)
+    ));
+    const categories = ["All", ...categories_ ]
+    const [selectedCategory, setSelectedCategory] = useState<any>("All");
 
     // Reference to the category container
     const categoryContainerRef = useRef<HTMLDivElement>(null);
@@ -46,7 +54,7 @@ const PropertiesModule = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-semibold mb-6">Properties</h1>
+            {/* <h1 className="text-2xl font-semibold mb-6">Properties</h1> */}
 
             {/* Category Tab Navigation */}
             <div className="relative mb-6">
