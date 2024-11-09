@@ -54,7 +54,7 @@ const ParkingPhoto6 = "/products/car-park/parking6.jpg"; // Use the relative pat
 
 const WarehousePhoto1 = "/products/warehouses/warehouse1.jpg"; // Use the relative path as a string
 const WarehousePhoto2 = "/products/warehouses/warehouse2.jpg"; // Use the relative path as a string
-const WarehousePhoto3 = "/products/warehouses/warehouse3.jpeg"; // Use the relative path as a string
+const WarehousePhoto3 = "/products/warehouses/warehouse3.jpg"; // Use the relative path as a string
 const WarehousePhoto4 = "/products/warehouses/warehouse4.jpg"; // Use the relative path as a string
 const WarehousePhoto5 = "/products/warehouses/warehouse5.jpg"; // Use the relative path as a string
 const WarehousePhoto6 = "/products/warehouses/warehouse6.jpg"; // Use the relative path as a string
