@@ -11,7 +11,7 @@ export default function SigninForm() {
 
   const loginHandler = (e: any) => {
     e.preventDefault ()
-    router.push ("/dashboard")
+    router.push ("/backoffice/")
   }
 
   return (

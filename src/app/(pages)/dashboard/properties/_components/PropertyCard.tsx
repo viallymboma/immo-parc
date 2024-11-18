@@ -79,7 +79,6 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
                             Voir Details
                         </button>
                     </Link>
-
                 </div>
             </div>
 
