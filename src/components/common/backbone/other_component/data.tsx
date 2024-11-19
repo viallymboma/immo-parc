@@ -40,7 +40,7 @@ export const bottomNavElement: BottomElemenetType [] = [
             <WaletSvgIcon />
         ), 
         tooltip: "Portefeuille", 
-        route: "/dashboard/wallet"
+        route: "/backoffice/wallet"
     }, 
     {
         id: 4,
@@ -48,9 +48,28 @@ export const bottomNavElement: BottomElemenetType [] = [
             <SettingSvgIcon />
         ), 
         tooltip: "Mon compte", 
-        route: "/dashboard/my-account"
+        route: "/backoffice/my-account"
     }
 ]
+
+const addElement = [
+    ...bottomNavElement, 
+    {
+        id: 5,
+        icon: (
+            <SettingSvgIcon />
+        ), 
+        tooltip: "Inviter quelqu'un", 
+        route: "/backoffice/invite-friends"
+    }
+]
+
+// Create bottomNavElementInAccount based on bottomNavElement with modified route for the fourth element
+export const bottomNavElementInAccount: BottomElemenetType[] = addElement.map((element) =>
+    element.id === 4
+        ? { ...element, route: "/backoffice/financial-accounts" }
+        : element
+);
 
 export const menuGroups = [
     {
@@ -68,8 +87,7 @@ export const menuGroups = [
                     <CalendarSvgIcon />
                 ),
                 label: "Commissions",
-                // route: "/dashboard/commissions",
-                route: "#"
+                route: "/backoffice/commissions"
             },
             {
                 icon: (
@@ -78,9 +96,9 @@ export const menuGroups = [
                 label: "Team",
                 route: "#",
                 children: [
-                    { label: "Mon équipe", route: "/dashboard/teams/view" },
-                    { label: "Tree View", route: "/dashboard/teams/tree-view" },
-                    { label: "Folder View", route: "dashboard/teams/folder-view" },
+                    { label: "Mon équipe", route: "/backoffice/teams/view" },
+                    { label: "Tree View", route: "/backoffice/teams/tree-view" },
+                    { label: "Folder View", route: "/backoffice/teams/folder-view" },
                 ],
             },
             {
@@ -90,10 +108,9 @@ export const menuGroups = [
                 label: "Transactions",
                 route: "#",
                 children: [
-                    // { label: "Tables", route: "/tables" },
-                    { label: "Commissions", route: "dashboard/transactions/commissions" },
-                    { label: "Withdrawals", route: "/dashboard/transactions/withdrawals" },
-                    { label: "Investissements", route: "/dashboard/transactions/investments" },
+                    { label: "Commissions", route: "/backoffice/transactions/commissions" },
+                    { label: "Withdrawals", route: "/backoffice/transactions/withdrawals" },
+                    { label: "Investissements", route: "/backoffice/transactions/investments" },
                 ],
             },
         ],
@@ -106,14 +123,14 @@ export const menuGroups = [
                     <ProfileSvgIcon />
                 ),
                 label: "Profile",
-                route: "/dashboard/profile",
+                route: "/backoffice/profile",
             }, 
             {
                 icon: (
                     <CalendarSvgIcon />
                 ),
                 label: "Utilisateurs",
-                route: "/dashboard/utilisateurs",
+                route: "/backoffice/utilisateurs",
             },
         ],
     },
@@ -136,6 +153,7 @@ export type TaskDataType = {
     id: number | string, 
     taskTitle?: string, 
     taskMission?: string,
+    taskShortInstruction?: string;
     taskRemuneration: number, 
     taskDescription: string, 
     taskStatus: string, 
@@ -148,6 +166,7 @@ export const tasks: TaskDataType [] = [
         id: 1, 
         taskTitle: "View Like & Comment", 
         taskMission: "View Like & Comment",
+        taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
@@ -157,7 +176,8 @@ export const tasks: TaskDataType [] = [
     {
         id: 2, 
         taskTitle: "View Like & Comment", 
-        taskMission: "View Like & Comment",
+        taskMission: "View Like & Comment", 
+        taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
@@ -167,7 +187,8 @@ export const tasks: TaskDataType [] = [
     {
         id: 3, 
         taskTitle: "View Like & Comment", 
-        taskMission: "View Like & Comment",
+        taskMission: "View Like & Comment", 
+        taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
@@ -177,7 +198,8 @@ export const tasks: TaskDataType [] = [
     {
         id: 4, 
         taskTitle: "View Like & Comment", 
-        taskMission: "View Like & Comment",
+        taskMission: "View Like & Comment", 
+        taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 

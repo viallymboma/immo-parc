@@ -15,7 +15,7 @@ const TaskCardStyled = ({ task }: any) => {
   return (
     <>
       {/* Left Section with Icon */}
-        <div className="flex items-start justify-center pt-4 w-[150px] h-[150px]">
+        <div className="flex items-start justify-center pt-4 w-[100px] h-[90px]">
             <Image
                 src="/youtube-squared.png" // Example: YouTube icon
                 alt="Task Icon"
@@ -25,11 +25,12 @@ const TaskCardStyled = ({ task }: any) => {
             />
         </div>
       {/* Right Section with Button */}
-        <div className='flex flex-row h-[150px] items-center'>
+        <div className='flex flex-row h-[90px]  items-center'>
             <div className=''>
-                <p className="text-sm font-bold">Demande: {task.taskTitle}</p>
-                <p className="text-sm text-gray-700 overflow-hidden text-ellipsis whitespace-normal line-clamp-2">{task.taskDescription}</p>
-                <p className="text-lg font-semibold text-yellow-600 mt-2">XOF {task.taskRemuneration}</p>
+                {/* <p className="text-sm font-bold">Demande: {task.taskTitle}</p> */}
+                <p className="text-sm font-bold">{task.taskShortInstruction}</p>
+                {/* <p className="text-sm text-gray-700 overflow-hidden text-ellipsis whitespace-normal line-clamp-2">{task.taskDescription}</p> */}
+                <p className="text-lg font-semibold text-primary mt-2">XOF {task.taskRemuneration}</p>
             </div>
             <div className='flex items-center justify-center w-[100px] h-[100px]'>
                 <button

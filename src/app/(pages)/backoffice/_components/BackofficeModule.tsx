@@ -22,7 +22,9 @@ import {
   TaskDataType,
   tasks,
 } from '@/components/common/backbone/other_component/data';
-import TaskList from '@/components/common/TaskList';
+import TaskCardStyled from '@/components/common/TaskCard';
+
+import TestimonialList from './testimonials/TestimonialList';
 
 // Image paths (Assumed to be in public directory)
 const Parking1 = '/products/car-park/parking1.jpg';
@@ -51,30 +53,41 @@ const BackofficeModule = () => {
           loop={true} // Infinite loop
           navigation
           pagination={{ clickable: true }}
-          className="w-full h-screen" // Make it take full width and height of the viewport
+          className="w-full h-[200px] lg:h-screen" // Make it take full width and height of the viewport
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <Image
                 width={1920} // Adjust as needed for responsive design
-                height={1080} // Adjust as needed for responsive design
+                height={500} // Adjust as needed for responsive design
                 src={image}
                 alt={`image ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full object-cover"
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
       <div>
-        <TaskList itemsList={tasks} itemsFilterList={ extractCategories } />
-        {/* {tasks.map((property: TaskDataType) => {
-          return (
-          // <PropertyCard key={property.id} property={property} />
-          <h1 key={ property?.id }>{
-            property?.taskMission
-          }</h1>
-        )})} */}
+        <div className='my-5'>
+          <h1 className='text-primary text-[20px] font-bold'>Salle des tâches</h1>
+        </div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
+          {tasks?.map((property: any) => {
+            return (
+                <div key={ property?.id } className='flex flex-row gap-1 items-center justify-between bg-white shadow-lg rounded-lg  max-w-sm'>
+                    <TaskCardStyled task={ property } />
+                </div>
+            )
+          })}
+        </div>
+        {/* <TaskList itemsList={tasks} itemsFilterList={ extractCategories } /> */}
+      </div>
+      <div className="w-full max-w-2xl my-5 mx-auto">
+        <div className='text-primary text-[20px] font-bold'>
+          Les temoignages
+        </div>
+        <TestimonialList />
       </div>
     </div>
   );
