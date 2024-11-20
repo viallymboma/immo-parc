@@ -18,7 +18,7 @@ interface SidebarProps {
 }
 
 const SidebarNavigation = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
-    const [pageName, setPageName] = useLocalStorage("selectedMenu", "dashboard");
+    const [pageName, setPageName] = useLocalStorage("selectedMenu", "backoffice");
   return (
     <ClickOutside onClick={() => setSidebarOpen(false)}>
       <aside
@@ -30,7 +30,7 @@ const SidebarNavigation = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       >
         {/* <!-- SIDEBAR HEADER --> */}
         <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5 xl:py-10">
-          <Link href="/dashboard">
+          <Link href="/backoffice">
               <GoldenLongVersion width="176" height="32" />
           </Link>
           <button

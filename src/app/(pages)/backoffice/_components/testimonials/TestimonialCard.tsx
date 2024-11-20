@@ -15,7 +15,7 @@ interface TestimonialCardProps {
 const TestimonialCard = ({ testimonial, isActive }: TestimonialCardProps) => {
     return (
         <Card
-          className={`p-4 transition-all duration-500 transform ${
+          className={`px-4 py-2 transition-all rounded-md duration-500 transform ${
             isActive
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 -translate-y-4 absolute'
@@ -27,14 +27,14 @@ const TestimonialCard = ({ testimonial, isActive }: TestimonialCardProps) => {
             </Avatar>
             <div className="flex-1">
               <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-lg">
+                <span className="font-semibold text-[13px]">
                   Félicitations {testimonial.name}
-                </h3>
-                <span className="text-yellow-500 font-bold">
+                </span>
+                <span className="text-yellow-500 font-bold text-[13px]">
                   {testimonial.amount}
                 </span>
               </div>
-              <p className="text-gray-500 mt-1">{testimonial.message}</p>
+              <p className="text-gray-500 mt-1 text-[12px]">{testimonial.message}</p>
             </div>
           </div>
         </Card>
