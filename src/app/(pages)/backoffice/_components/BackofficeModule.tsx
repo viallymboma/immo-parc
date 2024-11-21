@@ -1,9 +1,9 @@
 "use client";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay'; // Add this import if Swiper's CSS for autoplay is needed.
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/autoplay'; // Add this import if Swiper's CSS for autoplay is needed.
 
 import React from 'react';
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import Link from 'next/link';
 import ClickOutside from '@/components/ClickOutside';
 
 const DropdownUser = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
   return (
     <ClickOutside onClick={() => setDropdownOpen(false)} className="relative">

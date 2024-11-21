@@ -1,9 +1,8 @@
-"use client";
-import 'jsvectormap/dist/css/jsvectormap.css';
-import 'flatpickr/dist/flatpickr.min.css';
-import '@/css/satoshi.css';
-import '@/css/style.css';
+import 'jsvectormap/dist/jsvectormap.css';
 
+// import 'flatpickr/dist/flatpickr.min.css';
+// import '@/css/satoshi.css';
+// import '@/css/style.css';
 import React from 'react';
 
 import DarkModeSwitcher from '@/components/Header/DarkModeSwitcher';

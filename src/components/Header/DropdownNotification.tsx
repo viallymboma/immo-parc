@@ -1,7 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import ClickOutside from "@/components/ClickOutside";
-import Image from "next/image";
+import React from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import ClickOutside from '@/components/ClickOutside';
 
 const notificationList = [
   {
@@ -32,8 +34,8 @@ const notificationList = [
 ];
 
 const DropdownNotification = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [notifying, setNotifying] = useState(true);
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
+  const [notifying, setNotifying] = React.useState(true);
 
   return (
     <ClickOutside onClick={() => setDropdownOpen(false)} className="relative hidden sm:block">
