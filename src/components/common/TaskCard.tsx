@@ -4,25 +4,37 @@ import React from 'react';
 import Image from 'next/image'; // Use for the icon image (if applicable)
 import { useRouter } from 'next/navigation';
 
-const TaskCardStyled = ({ task }: any) => {
+import { useTaskStore } from '@/store/task-store';
+
+import { TaskDataType } from './backbone/other_component/data';
+
+type TaskCardType = {
+  task: TaskDataType
+}
+
+const TaskCardStyled: React.FC<TaskCardType> = ({ task }) => {
+
   const router = useRouter();
 
-  // Handler for navigation to task details
-  const handleViewDetails = () => {
-    router.push(`/backoffice/task-list/${task.id}`);
-  };
+  const { tasks_, toggleTaskSelection, selectedTasks } = useTaskStore();
+
+  // // Handler for navigation to task details
+  // const handleViewDetails = () => {
+  //   // router.push(`/backoffice/task-list/${task.id}`);
+  //   toggleTaskSelection (task.id)
+  // };
 
   return (
     <>
       {/* Left Section with Icon */}
         <div className="flex items-start justify-center pt-4 w-[100px] h-[90px]">
-            <Image
-                src="/youtube-squared.png" // Example: YouTube icon
-                alt="Task Icon"
-                width={100}
-                height={100}
-                className="rounded-full"
-            />
+          <Image
+            src="/youtube-squared.png" // Example: YouTube icon
+            alt="Task Icon"
+            width={100}
+            height={100}
+            className="rounded-full"
+          />
         </div>
       {/* Right Section with Button */}
         <div className='flex flex-row h-[90px]  items-center'>
@@ -33,26 +45,54 @@ const TaskCardStyled = ({ task }: any) => {
                 <p className="text-lg font-semibold text-primary mt-2">XOF {task.taskRemuneration}</p>
             </div>
             <div className='flex items-center justify-center w-[100px] h-[100px]'>
-                <button
-                    onClick={handleViewDetails}
-                    className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white transition duration-300"
+              <label
+                    htmlFor="imageUpload"
+                    className="flex items-center space-x-2 cursor-pointer"
                 >
-                    {/* Add any icon or content here */}
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                    >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 4v16m8-8H4"
+                    {/* <input
+                      id="imageUpload"
+                      type="file"
+                      accept="image/*"
+                      className="hidden" // Hide the input visually
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) {
+                          alert(`Selected file: ${file.name}`); // Handle file selection
+                        }
+                        handleViewDetails ()
+                      }}
+                    /> */}
+                    <input
+                      id="imageUpload"
+                      type="checkbox"
+                      hidden
+                      // checked={selectedTasks.some((t) => t.id === task.id)}
+                      checked={task.isSelected}
+                      onChange={() => {
+                        toggleTaskSelection(task?.id as number); 
+                        console.log("888888888", task?.id)
+                      }}
                     />
-                    </svg>
-                </button>
+                    <div className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 ${ task?.isSelected ? "bg-yellow-500" : "bg-transparent" } hover:text-white transition duration-300`}>
+                        {/* Add any icon or content here */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 4v16m8-8H4"
+                          />
+                        </svg>
+                    </div>
+                    {/* <span className="text-sm font-medium text-gray-600">Upload Image</span> */}
+                </label>
+                
             </div>
         </div>
     </>

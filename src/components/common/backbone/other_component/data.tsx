@@ -150,15 +150,29 @@ const getRandomTaskStatus = () => {
 };
 
 export type TaskDataType = {
-    id: number | string, 
-    taskTitle?: string, 
-    taskMission?: string,
-    taskShortInstruction?: string;
-    taskRemuneration: number, 
-    taskDescription: string, 
-    taskStatus: string, 
-    taskCategory?: string,
-    taskLink: string, 
+    id: string | number;
+    taskTitle: string;
+    taskMission: string; 
+    taskDescription: string;
+    taskRemuneration: number;
+    taskShortInstruction: string;
+    taskCategory?: string; 
+    taskLink: string;
+    taskStatus: string;
+    imageUrl?: string | null;
+    createdAt?: string; // Optional field
+    isSelected?: boolean; // New property to indicate selection state
+    isSubmitted: boolean;
+    submitTask?: () => void;
+    // id: number | string, 
+    // taskTitle?: string, 
+    // taskMission?: string,
+    // taskShortInstruction?: string;
+    // taskRemuneration: number, 
+    // taskDescription: string, 
+    // taskStatus: string, 
+    // taskCategory?: string,
+    // taskLink: string, 
 }
 
 export const tasks: TaskDataType [] = [
@@ -170,7 +184,11 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (), 
+        taskStatus: getRandomTaskStatus (),
+        createdAt: '2024.11.20-01:12:01',
+        imageUrl: null,
+        isSelected: false, 
+        isSubmitted: false, 
         taskLink: "https://www.youtube.com/watch?v=_M3bAO6JG_c", 
     }, 
     {
@@ -178,10 +196,14 @@ export const tasks: TaskDataType [] = [
         taskTitle: "View Like & Comment", 
         taskMission: "View Like & Comment", 
         taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
-        taskRemuneration: 800, 
+        taskRemuneration: 700, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (), 
+        taskStatus: getRandomTaskStatus (),
+        createdAt: '2024.11.20-01:12:01',
+        imageUrl: null,
+        isSelected: false, 
+        isSubmitted: false, 
         taskLink: "https://www.youtube.com/watch?v=_M3bAO6JG_c", 
     }, 
     {
@@ -189,10 +211,14 @@ export const tasks: TaskDataType [] = [
         taskTitle: "View Like & Comment", 
         taskMission: "View Like & Comment", 
         taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
-        taskRemuneration: 800, 
+        taskRemuneration: 600, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (), 
+        taskStatus: getRandomTaskStatus (),
+        createdAt: '2024.11.20-01:12:01',
+        imageUrl: null,
+        isSelected: false, 
+        isSubmitted: false, 
         taskLink: "https://www.youtube.com/watch?v=_M3bAO6JG_c", 
     }, 
     {
@@ -200,10 +226,14 @@ export const tasks: TaskDataType [] = [
         taskTitle: "View Like & Comment", 
         taskMission: "View Like & Comment", 
         taskShortInstruction: "Demande: Regarder la video, aimer et abonnez-vous", 
-        taskRemuneration: 800, 
+        taskRemuneration: 500, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (), 
+        taskStatus: getRandomTaskStatus (),
+        createdAt: '2024.11.20-01:12:01',
+        imageUrl: null,
+        isSelected: false, 
+        isSubmitted: false, 
         taskLink: "https://www.youtube.com/watch?v=_M3bAO6JG_c", 
     }, 
 ]

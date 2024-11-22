@@ -58,10 +58,10 @@ export type TaskDetailType = {
 };
 
 const ViewDetailsModule = () => {
-    const { title, description, xofPoints, createdAt, isSubmitted, submitTask } = useTaskStore();
+    const { selectedTask, submitTask } = useTaskStore();
     return (
         <>
-            <TaskDetailCard />
+            <TaskDetailCard key={selectedTask?.id} task={selectedTask!} />
         </>
     )
 }

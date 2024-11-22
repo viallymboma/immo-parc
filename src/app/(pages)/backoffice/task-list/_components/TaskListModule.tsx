@@ -4,7 +4,11 @@ import {
   TaskDataType,
   tasks,
 } from '@/components/common/backbone/other_component/data';
-import TaskList from '@/components/common/TaskList';
+import NavigationContent
+  from '@/components/common/navigation/NavigationContent';
+import TaskDetailCard from '@/components/common/TaskDetailCard';
+
+// import TaskList from '@/components/common/TaskList';
 
 const TaskListModule = () => {
     const extractCategories = Array.from(new Set(
@@ -12,18 +16,15 @@ const TaskListModule = () => {
     ));
     return (
         <div>
-            {/* <NavigationContent 
+            <NavigationContent 
+                listClass='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'
                 buttonList={ extractCategories }
             >
-                {tasks.map((property: TaskDataType) => {
-                    return (
-                    // <PropertyCard key={property.id} property={property} />
-                    <h1 key={ property?.id }>{
-                        property?.taskMission
-                    }</h1>
-                )})}
-            </NavigationContent> */}
-            <TaskList itemsFilterList={extractCategories} itemsList={tasks} />
+                {tasks.map((task: TaskDataType) => (
+                    <TaskDetailCard key={task?.id} task={task} />
+                ))}
+            </NavigationContent>
+            {/* <TaskList itemsFilterList={extractCategories} itemsList={tasks} /> */}
         </div>
     )
 }

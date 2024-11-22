@@ -3,11 +3,11 @@ import React from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-import ChartOne from '@/components/Charts/ChartOne';
 import DataStatsOne from '@/components/DataStats/DataStatsOne';
 
-import ChartThree from '../Charts/ChartThree';
-import ChartTwo from '../Charts/ChartTwo';
+// import ChartOne from '@/components/Charts/ChartOne';
+// import ChartThree from '../Charts/ChartThree';
+// import ChartTwo from '../Charts/ChartTwo';
 
 // import ChatCard from '../Chat/ChatCard';
 // import MapOne from '../Maps/MapOne';
@@ -24,9 +24,9 @@ const ECommerce: React.FC = () => {
           <h1>{t('welcome')}</h1>
           <button>{t('logout')}</button>
         </div> */}
-        <ChartOne />
+        {/* <ChartOne />
         <ChartTwo />
-        <ChartThree />
+        <ChartThree /> */}
         {/* <MapOne /> */}
         {/* <div className="col-span-12 xl:col-span-8">
           <TableOne />

@@ -23,6 +23,7 @@ import {
   tasks,
 } from '@/components/common/backbone/other_component/data';
 import TaskCardStyled from '@/components/common/TaskCard';
+import { useTaskStore } from '@/store/task-store';
 
 import TestimonialList from './testimonials/TestimonialList';
 
@@ -39,6 +40,7 @@ const BackofficeModule = () => {
   const extractCategories = Array.from(new Set(
     tasks.map((prop: TaskDataType) => prop?.taskStatus)
   ));
+  const { tasks_ } = useTaskStore();
   return (
     <div>
       <div className='w-full'>
@@ -73,7 +75,7 @@ const BackofficeModule = () => {
           <h1 className='text-primary text-[20px] font-bold'>Salle des tâches</h1>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
-          {tasks?.map((property: any) => {
+          {tasks_?.map((property: TaskDataType) => {
             return (
                 <div key={ property?.id } className='flex flex-row gap-1 items-center justify-between bg-white shadow-lg rounded-lg  max-w-sm'>
                     <TaskCardStyled task={ property } />

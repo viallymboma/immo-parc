@@ -19,8 +19,12 @@ const config: Config = {
   		'2xsm': '375px',
   		xsm: '425px',
   		'3xl': '2000px',
-  		': '.screens,
-            ...defaultTheme.screens,: '
+		...defaultTheme.screens,
+		'sm': '640px',
+		'md': '768px',
+		'lg': '1024px',
+		'xl': '1280px',
+		'2xl': '1536px',
   	},
   	extend: {
   		colors: {
@@ -315,7 +319,7 @@ const config: Config = {
   			'21/9': '21 / 9'
   		},
   		backgroundImage: {
-  			video: 'url('../images/video/video.png')'
+  			video: "url('../images/video/video.png')", 
   		},
   		content: {
   			'icon-copy': 'url("../images/icon/icon-copy-alt.svg")'
