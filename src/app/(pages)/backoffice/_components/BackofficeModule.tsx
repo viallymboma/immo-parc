@@ -20,7 +20,6 @@ import {
 
 import {
   TaskDataType,
-  tasks,
 } from '@/components/common/backbone/other_component/data';
 import TaskCardStyled from '@/components/common/TaskCard';
 import { useTaskStore } from '@/store/task-store';
@@ -37,10 +36,9 @@ const images = [
 ];
 
 const BackofficeModule = () => {
-  const extractCategories = Array.from(new Set(
-    tasks.map((prop: TaskDataType) => prop?.taskStatus)
-  ));
+
   const { tasks_ } = useTaskStore();
+
   return (
     <div>
       <div className='w-full'>

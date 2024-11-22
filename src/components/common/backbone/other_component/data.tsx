@@ -137,11 +137,12 @@ export const menuGroups = [
 ];
 
 const taskStatus = [
-    "pending", 
-    "ongoing", 
-    "completed", 
-    "failed", 
-    "expired"
+    "Toutes", 
+    "Sélectionnées", 
+    "Completée", 
+    "Echouée", 
+    "Abandonné", 
+    "Expirée"
 ]
 
 const getRandomTaskStatus = () => {
@@ -184,7 +185,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (),
+        taskStatus: taskStatus[1] || getRandomTaskStatus (),
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 
@@ -199,7 +200,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 700, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (),
+        taskStatus: taskStatus[1] || getRandomTaskStatus (),
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 
@@ -214,7 +215,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 600, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (),
+        taskStatus: taskStatus[1] || getRandomTaskStatus (),
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 
@@ -229,7 +230,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 500, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: getRandomTaskStatus (),
+        taskStatus: taskStatus[1] || getRandomTaskStatus (),
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 

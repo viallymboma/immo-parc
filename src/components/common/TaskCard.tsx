@@ -14,15 +14,9 @@ type TaskCardType = {
 
 const TaskCardStyled: React.FC<TaskCardType> = ({ task }) => {
 
-  const router = useRouter();
+  const router = useRouter ()
 
-  const { tasks_, toggleTaskSelection, selectedTasks } = useTaskStore();
-
-  // // Handler for navigation to task details
-  // const handleViewDetails = () => {
-  //   // router.push(`/backoffice/task-list/${task.id}`);
-  //   toggleTaskSelection (task.id)
-  // };
+  const { tasks_, toggleTaskSelection, selectTask,  } = useTaskStore();
 
   return (
     <>
@@ -38,61 +32,51 @@ const TaskCardStyled: React.FC<TaskCardType> = ({ task }) => {
         </div>
       {/* Right Section with Button */}
         <div className='flex flex-row h-[90px]  items-center'>
-            <div className=''>
-                {/* <p className="text-sm font-bold">Demande: {task.taskTitle}</p> */}
-                <p className="text-sm font-bold">{task.taskShortInstruction}</p>
-                {/* <p className="text-sm text-gray-700 overflow-hidden text-ellipsis whitespace-normal line-clamp-2">{task.taskDescription}</p> */}
-                <p className="text-lg font-semibold text-primary mt-2">XOF {task.taskRemuneration}</p>
+            <div className=''
+              onClick={ () => {
+                selectTask (task?.id as number); 
+                router?.push(`/backoffice/task-list/${ task?.id }`)
+              }}
+            >
+              {/* <p className="text-sm font-bold">Demande: {task.taskTitle}</p> */}
+              <p className="text-sm font-bold">{task.taskShortInstruction}</p>
+              {/* <p className="text-sm text-gray-700 overflow-hidden text-ellipsis whitespace-normal line-clamp-2">{task.taskDescription}</p> */}
+              <p className="text-lg font-semibold text-primary mt-2">XOF {task.taskRemuneration}</p>
             </div>
+
             <div className='flex items-center justify-center w-[100px] h-[100px]'>
               <label
-                    htmlFor="imageUpload"
-                    className="flex items-center space-x-2 cursor-pointer"
-                >
-                    {/* <input
-                      id="imageUpload"
-                      type="file"
-                      accept="image/*"
-                      className="hidden" // Hide the input visually
-                      onChange={(e) => {
-                        const file = e.target.files?.[0];
-                        if (file) {
-                          alert(`Selected file: ${file.name}`); // Handle file selection
-                        }
-                        handleViewDetails ()
-                      }}
-                    /> */}
-                    <input
-                      id="imageUpload"
-                      type="checkbox"
-                      hidden
-                      // checked={selectedTasks.some((t) => t.id === task.id)}
-                      checked={task.isSelected}
-                      onChange={() => {
-                        toggleTaskSelection(task?.id as number); 
-                        console.log("888888888", task?.id)
-                      }}
-                    />
-                    <div className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 ${ task?.isSelected ? "bg-yellow-500" : "bg-transparent" } hover:text-white transition duration-300`}>
-                        {/* Add any icon or content here */}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          className="w-6 h-6"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 4v16m8-8H4"
-                          />
-                        </svg>
-                    </div>
-                    {/* <span className="text-sm font-medium text-gray-600">Upload Image</span> */}
-                </label>
-                
+                htmlFor={`task-${task.id}`}
+                className="flex items-center space-x-2 cursor-pointer"
+              >
+                <input
+                  id={`task-${task?.id}`} // Unique ID for each checkbox
+                  type="checkbox"
+                  hidden
+                  checked={task?.isSelected} // Reflect the isSelected state
+                  onChange={() => {
+                    toggleTaskSelection(task?.id as number); // Toggle selection on change
+                    console.log("Toggled task ID:", task?.id); // Debugging log
+                  }}
+                />
+                <div className={`w-10 h-10 flex items-center justify-center rounded-full border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 ${ task?.isSelected ? "bg-yellow-500" : "bg-transparent" } hover:text-white transition duration-300`}>
+                    {/* Add any icon or content here */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                </div>
+              </label>
             </div>
         </div>
     </>

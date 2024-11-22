@@ -25,13 +25,13 @@ type TaskDetailCardProps = {
 
 const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
     const {
-        taskTitle,
-        taskDescription,
-        taskRemuneration,
-        createdAt = 'N/A',
-        isSubmitted,
+        // taskTitle,
+        // taskDescription,
+        // taskRemuneration,
+        // createdAt = 'N/A',
+        // isSubmitted,
         submitTask,
-        taskLink,
+        // taskLink,
     } = task;
 
     return (
@@ -45,9 +45,9 @@ const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
                     </div>
                     <div className="flex-1 min-w-0">
                         <h2 className="text-lg font-semibold text-gray-900 leading-tight">
-                            {taskTitle}
+                            {task?.taskTitle}
                         </h2>
-                        <p className="mt-1 text-sm text-gray-500">{taskDescription}</p>
+                        <p className="mt-1 text-sm text-gray-500">{task?.taskDescription}</p>
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@ const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
                         </label>
                     </div>
 
-                    <div className="text-xl font-bold text-red-500">XOF : {taskRemuneration}</div>
+                    <div className="text-xl font-bold text-red-500">XOF : {task?.taskRemuneration}</div>
                 </div>
             </CardHeader>
 
@@ -92,7 +92,7 @@ const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
                 <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm text-gray-500">
                         <span>Créer :</span>
-                        <span>{createdAt}</span>
+                        <span>{task?.createdAt}</span>
                     </div>
 
                     <div className="flex items-center justify-between text-sm text-gray-500">
@@ -123,10 +123,10 @@ const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
                     </div>
                     <Button
                         onClick={submitTask}
-                        disabled={isSubmitted}
+                        disabled={task?.isSubmitted}
                         className="bg-yellow-500 hover:bg-yellow-600 text-white px-6"
                     >
-                        {isSubmitted ? 'Soumis' : 'Soumettre'}
+                        {task?.isSubmitted ? 'Soumis' : 'Soumettre'}
                     </Button>
                 </div>
             </CardFooter>

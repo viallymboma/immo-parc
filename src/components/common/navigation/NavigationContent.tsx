@@ -12,7 +12,7 @@ const NavigationContent = ({
     listClass?: string
   }>) => {
 
-    const categories = ["All", ...buttonList ]
+    const categories = [...buttonList ]
     const [selectedCategory, setSelectedCategory] = React.useState<any>("All");
     return (
         <div className="p-4">

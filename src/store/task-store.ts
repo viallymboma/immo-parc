@@ -1,9 +1,203 @@
 import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 
 import {
   TaskDataType,
   tasks,
 } from '@/components/common/backbone/other_component/data';
+
+interface TaskState {
+  tasks_: TaskDataType[]; // Store the list of tasks
+  selectedTask: TaskDataType | null; // Store the currently selected task
+  selectedTasks: TaskDataType[]; // Array of selected tasks
+  setTasks: (tasks_: TaskDataType[]) => void; // Load all tasks
+  toggleTaskSelection: (id: number) => void; // Add or remove a task from the selection
+  clearTaskSelection: () => void; // Clear all selected tasks
+  selectTask: (id: number) => void; // Select a specific task by ID
+  submitTask: () => void; // Mark the selected task as submitted
+}
+
+export const useTaskStore = create<TaskState>()(
+  persist(
+    (set) => ({
+      tasks_: tasks, // Initialize tasks
+      selectedTask: null, // No task selected by default
+      selectedTasks: [], // Array of selected tasks
+
+      // Load all tasks
+      setTasks: (tasks) =>
+        set({
+          tasks_: tasks.map((task) => ({
+            ...task,
+            isSelected: task.isSelected ?? false, // Default to false if not set
+          })),
+        }),
+
+      // Select a specific task by ID
+      selectTask: (id) =>
+        set((state) => ({
+          selectedTask: state.tasks_.find((task) => task.id === id) || null,
+          tasks_: state.tasks_.map((task) =>
+            task.id === id ? { ...task, isSelected: true } : { ...task, isSelected: false }
+          ),
+        })),
+
+      // Add or remove a task from the selection
+      toggleTaskSelection: (id) =>
+        set((state) => {
+          const updatedTasks = state.tasks_.map((task) =>
+            task.id === id
+              ? { ...task, isSelected: !task.isSelected, taskStatus: task?.isSelected ? "Toutes" : "Sélectionnées" }
+              : task
+          );
+
+          const updatedSelectedTasks = updatedTasks.filter((task) => task.isSelected);
+          return { tasks_: updatedTasks, selectedTasks: updatedSelectedTasks };
+        }),
+
+      // Clear all selected tasks
+      clearTaskSelection: () =>
+        set((state) => ({
+          tasks_: state.tasks_.map((task) => ({ ...task, isSelected: false })),
+          selectedTasks: [],
+        })),
+
+      // Mark the selected task as submitted
+      submitTask: () =>
+        set((state) => {
+          if (!state.selectedTask) return state;
+          const updatedTasks = state.tasks_.map((task) =>
+            task.id === state.selectedTask!.id
+              ? { ...task, taskStatus: 'submitted' }
+              : task
+          );
+          return {
+            tasks_: updatedTasks,
+            selectedTask: {
+              ...state.selectedTask,
+              taskStatus: 'submitted',
+              isSelected: false, // Optionally deselect after submission
+            },
+          };
+        }),
+    }),
+    {
+      name: 'task-store', // Name for localStorage key
+      partialize: (state) => ({ tasks_: state.tasks_, selectedTasks: state.selectedTasks }), // Only persist relevant state
+    }
+  )
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CODE WITHOUT PERSISTANCE
+// import { create } from 'zustand';
+
+// import {
+//   TaskDataType,
+//   tasks,
+// } from '@/components/common/backbone/other_component/data';
+
+// interface TaskState {
+//   tasks_: TaskDataType[]; // Store the list of tasks
+//   selectedTask: TaskDataType | null; // Store the currently selected task
+//   selectedTasks: TaskDataType[]; // Array of selected tasks
+//   setTasks: (tasks_: TaskDataType[]) => void; // Load all tasks
+//   toggleTaskSelection: (id: number) => void; // Add or remove a task from the selection
+//   clearTaskSelection: () => void; // Clear all selected tasks
+//   selectTask: (id: number) => void; // Select a specific task by ID
+//   submitTask: () => void; // Mark the selected task as submitted
+// }
+
+// export const useTaskStore = create<TaskState>((set) => ({
+//   tasks_: tasks, // Initialize tasks as an empty array
+//   selectedTask: null, // No task selected by default
+//   selectedTasks: [], // Array of selected tasks
+
+//   // Load all tasks
+//   setTasks: (tasks) =>
+//     set({
+//       tasks_: tasks.map((task) => ({
+//         ...task,
+//         isSelected: task.isSelected ?? false, // Default to false if not set
+//       })),
+//     }),
+
+//   // Select a specific task by ID
+//   selectTask: (id) =>
+//     set((state) => ({
+//       selectedTask: state.tasks_.find((task) => task.id === id) || null,
+//       tasks: state.tasks_.map((task) =>
+//         task.id === id ? { ...task, isSelected: true } : { ...task, isSelected: false }
+//       ),
+//     })),
+
+//   // Add or remove a task from the selection
+//   toggleTaskSelection: (id) =>
+//     set((state) => {
+//       const updatedTasks = state.tasks_.map((task) => task.id === id ? 
+//         { ...task, isSelected: !task.isSelected }
+//         : 
+//         task
+//       );
+
+//       const updatedSelectedTasks = updatedTasks.filter((task) => task.isSelected);
+//       // console.log(updatedTasks, updatedSelectedTasks, "pppoooiiiuuuyyytttrrreeewwwqqq")
+
+//       return { tasks_: updatedTasks, selectedTasks: updatedSelectedTasks };
+//     }),
+
+
+//   // Clear all selected tasks
+//   clearTaskSelection: () =>
+//     set((state) => ({
+//       tasks: state.tasks_.map((task) => ({ ...task, isSelected: false })),
+//       selectedTasks: [],
+//     })),
+
+//   // Mark the selected task as submitted
+//   submitTask: () =>
+//     set((state) => {
+//       if (!state.selectedTask) return state;
+//       const updatedTasks = state.tasks_.map((task) =>
+//         task.id === state.selectedTask!.id
+//           ? { ...task, taskStatus: "submitted" }
+//           : task
+//       );
+//       return {
+//         tasks: updatedTasks,
+//         selectedTask: {
+//           ...state.selectedTask,
+//           taskStatus: "submitted",
+//           isSelected: false, // Optionally deselect after submission
+//         },
+//       };
+//     }),
+// }));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // interface TaskDataType {
 //   id: string | number;
@@ -21,16 +215,7 @@ import {
 //   submitTask?: () => void;
 // }
 
-interface TaskState {
-  tasks_: TaskDataType[]; // Store the list of tasks
-  selectedTask: TaskDataType | null; // Store the currently selected task
-  selectedTasks: TaskDataType[]; // Array of selected tasks
-  setTasks: (tasks_: TaskDataType[]) => void; // Load all tasks
-  toggleTaskSelection: (id: number) => void; // Add or remove a task from the selection
-  clearTaskSelection: () => void; // Clear all selected tasks
-  selectTask: (id: number) => void; // Select a specific task by ID
-  submitTask: () => void; // Mark the selected task as submitted
-}
+
 
 // export const useTaskStore = create<TaskState>((set) => ({
 //   tasks: [], // Initialize tasks as an empty array
@@ -78,42 +263,8 @@ interface TaskState {
 //     }),
 // }));
 
-export const useTaskStore = create<TaskState>((set) => ({
-  tasks_: tasks, // Initialize tasks as an empty array
-  selectedTask: null, // No task selected by default
-  selectedTasks: [], // Array of selected tasks
 
-  // Load all tasks
-  setTasks: (tasks) =>
-    set({
-      tasks_: tasks.map((task) => ({
-        ...task,
-        isSelected: false, // Initialize isSelected to false for all tasks
-      })),
-    }),
 
-  // Select a specific task by ID
-  selectTask: (id) =>
-    set((state) => ({
-      selectedTask: state.tasks_.find((task) => task.id === id) || null,
-      tasks: state.tasks_.map((task) =>
-        task.id === id ? { ...task, isSelected: true } : { ...task, isSelected: false }
-      ),
-    })),
-
-  // Add or remove a task from the selection
-  toggleTaskSelection: (id) =>
-    set((state) => {
-      const updatedTasks = state.tasks_.map((task) =>
-        task.id === id
-          ? { ...task, isSelected: !task.isSelected }
-          : task
-      );
-
-      const updatedSelectedTasks = updatedTasks.filter((task) => task.isSelected);
-
-      return { tasks: updatedTasks, selectedTasks: updatedSelectedTasks };
-    }),
   // toggleTaskSelection: (id) =>
   //   set((state) => {
   //     console.log(state.tasks_, "lllllllll")
@@ -137,41 +288,6 @@ export const useTaskStore = create<TaskState>((set) => ({
 
   //     return { tasks: updatedTasks, selectedTasks: updatedSelectedTasks };
   //   }),
-
-  // Clear all selected tasks
-  clearTaskSelection: () =>
-    set((state) => ({
-      tasks: state.tasks_.map((task) => ({ ...task, isSelected: false })),
-      selectedTasks: [],
-    })),
-
-  // Mark the selected task as submitted
-  submitTask: () =>
-    set((state) => {
-      if (!state.selectedTask) return state;
-      const updatedTasks = state.tasks_.map((task) =>
-        task.id === state.selectedTask!.id
-          ? { ...task, taskStatus: "submitted" }
-          : task
-      );
-      return {
-        tasks: updatedTasks,
-        selectedTask: {
-          ...state.selectedTask,
-          taskStatus: "submitted",
-          isSelected: false, // Optionally deselect after submission
-        },
-      };
-    }),
-}));
-
-
-
-
-
-
-
-
 
 
 // import { create } from 'zustand';
