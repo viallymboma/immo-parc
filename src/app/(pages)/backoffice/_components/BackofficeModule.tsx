@@ -24,6 +24,7 @@ import {
 import TaskCardStyled from '@/components/common/TaskCard';
 import { useTaskStore } from '@/store/task-store';
 
+import AboutUs from './about-us/AboutUs';
 import TestimonialList from './testimonials/TestimonialList';
 
 // Image paths (Assumed to be in public directory)
@@ -89,6 +90,9 @@ const BackofficeModule = () => {
         </div>
         <TestimonialList />
       </div>
+      <section>
+        <AboutUs />
+      </section>
     </div>
   );
 }
