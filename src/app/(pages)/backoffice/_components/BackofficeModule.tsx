@@ -69,6 +69,7 @@ const BackofficeModule = () => {
           ))}
         </Swiper>
       </div>
+
       <div>
         <div className='my-5'>
           <h1 className='text-primary text-[20px] font-bold'>Tâches pour aujourd'hui</h1>
@@ -84,10 +85,11 @@ const BackofficeModule = () => {
         </div>
         {/* <TaskList itemsList={tasks} itemsFilterList={ extractCategories } /> */}
       </div>
+
       <div className="w-full max-w-2xl my-5 mx-auto">
-        <div className='text-primary text-[20px] font-bold mb-5'>
+        {/* <div className='text-primary text-[20px] font-bold mb-5'>
           Les temoignages
-        </div>
+        </div> */}
         <TestimonialList />
       </div>
       <section>

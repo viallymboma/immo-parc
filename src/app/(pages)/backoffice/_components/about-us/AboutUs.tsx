@@ -72,8 +72,10 @@ export default function AboutUs() {
                             >
                                 <Card className="p-6 h-full bg-white dark:bg-gray-800 hover:shadow-lg transition-shadow duration-300">
                                     <div className="flex flex-col h-full">
-                                        <div className="rounded-full bg-blue-100 dark:bg-blue-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                                            <Icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                                        <div className="rounded-full bg-[#FFFBEB]  dark:bg-blue-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                                            {/* bg-blue-100 */}
+                                            <Icon className="w-6 h-6 text-[#FCD34D] dark:text-blue-400" />
+                                            {/* text-blue-600 */}
                                         </div>
                                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                                             {feature.title}
