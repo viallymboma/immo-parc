@@ -1,7 +1,11 @@
 "use client";
 import React from 'react';
 
+import { useTaskStore } from '@/store/task-store';
+
 import NavigateCategories from './NavigateCategories';
+
+// import { taskStatus } from '../backbone/other_component/data';
 
 const NavigationContent = ({
     children, buttonList, 
@@ -14,13 +18,17 @@ const NavigationContent = ({
 
     const categories = [...buttonList ]
     const [selectedCategory, setSelectedCategory] = React.useState<any>("All");
+    const { toggleCategory,  } = useTaskStore();
     return (
         <div className="p-4">
             <NavigateCategories>
                 {categories.map((category) => (
                     <button
                         key={category}
-                        onClick={() => setSelectedCategory(category)}
+                        onClick={() => {
+                            setSelectedCategory(category)
+                            toggleCategory (category)
+                        }}
                         className={`py-2 px-4 whitespace-nowrap ${
                             selectedCategory === category
                                 ? 'border-b-2 border-blue-500 text-blue-500'

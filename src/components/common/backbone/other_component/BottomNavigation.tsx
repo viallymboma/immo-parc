@@ -10,7 +10,7 @@ import {
 
 const BottomNavigation = () => {
     return (
-        <div className='bg-[#1F2A37] w-[100%] py-2 justify-around flex flex-row'>
+        <div className='bg-[#1F2A37]  w-[100%] py-2 justify-around flex flex-row'>
             {
                 bottomNavElement?.map((boElement: BottomElemenetType, index: number) => {
                     return (
@@ -18,7 +18,7 @@ const BottomNavigation = () => {
                             <span>
                                 { boElement?.icon }
                             </span>
-                            <span className='text-[13px]'>
+                            <span className='text-[13px] text-white'>
                                 { boElement?.tooltip }
                             </span>
                         </Link>

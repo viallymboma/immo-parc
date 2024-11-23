@@ -70,12 +70,12 @@ const BackofficeModule = () => {
       </div>
       <div>
         <div className='my-5'>
-          <h1 className='text-primary text-[20px] font-bold'>Salle des tâches</h1>
+          <h1 className='text-primary text-[20px] font-bold'>Tâches pour aujourd'hui</h1>
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
+        <div className='grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-3'>
           {tasks_?.map((property: TaskDataType) => {
             return (
-                <div key={ property?.id } className='flex flex-row gap-1 items-center justify-between bg-white shadow-lg rounded-lg  max-w-sm'>
+                <div key={ property?.id } className='flex flex-row gap-1 items-center justify-between dark:bg-[#122031] bg-white shadow-lg rounded-lg  max-w-sm'>
                     <TaskCardStyled task={ property } />
                 </div>
             )
@@ -84,7 +84,7 @@ const BackofficeModule = () => {
         {/* <TaskList itemsList={tasks} itemsFilterList={ extractCategories } /> */}
       </div>
       <div className="w-full max-w-2xl my-5 mx-auto">
-        <div className='text-primary text-[20px] font-bold'>
+        <div className='text-primary text-[20px] font-bold mb-5'>
           Les temoignages
         </div>
         <TestimonialList />

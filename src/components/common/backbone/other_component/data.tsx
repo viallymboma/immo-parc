@@ -136,7 +136,7 @@ export const menuGroups = [
     },
 ];
 
-const taskStatus = [
+export const taskStatus = [
     "Toutes", 
     "Sélectionnées", 
     "Completée", 
@@ -185,7 +185,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 800, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: taskStatus[1] || getRandomTaskStatus (),
+        taskStatus: taskStatus[0],
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 
@@ -200,7 +200,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 700, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: taskStatus[1] || getRandomTaskStatus (),
+        taskStatus: taskStatus[0],
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 
@@ -215,7 +215,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 600, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: taskStatus[1] || getRandomTaskStatus (),
+        taskStatus: taskStatus[0],
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 
@@ -230,7 +230,7 @@ export const tasks: TaskDataType [] = [
         taskRemuneration: 500, 
         taskDescription: "Inscrivez-vous et connectez-vous avec votre compte YouTube, puis prenez des captures d'écran et téléchargez des images si nécessaire.", 
         taskCategory: "", 
-        taskStatus: taskStatus[1] || getRandomTaskStatus (),
+        taskStatus: taskStatus[0],
         createdAt: '2024.11.20-01:12:01',
         imageUrl: null,
         isSelected: false, 

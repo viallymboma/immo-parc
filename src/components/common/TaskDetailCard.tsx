@@ -24,16 +24,7 @@ type TaskDetailCardProps = {
 };
 
 const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
-    const {
-        // taskTitle,
-        // taskDescription,
-        // taskRemuneration,
-        // createdAt = 'N/A',
-        // isSubmitted,
-        submitTask,
-        // taskLink,
-    } = task;
-
+    const { submitTask } = task;
     return (
         <Card className="w-full max-w-xl bg-white rounded-xl shadow-lg overflow-hidden">
             <CardHeader className="space-y-4 p-6">
@@ -52,12 +43,7 @@ const TaskDetailCard: React.FC<TaskDetailCardProps> = ({ task }) => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                    {/* <div className="flex items-center space-x-2">
-                        <Camera className="w-5 h-5 text-yellow-400" />
-                        <span className="text-sm font-medium text-gray-600">
-                        Capture d'écran requise
-                        </span>
-                    </div> */}
+
                     <div className="flex items-center space-x-2">
                         <label
                             htmlFor="imageUpload"

@@ -10,8 +10,11 @@ interface TaskState {
   tasks_: TaskDataType[]; // Store the list of tasks
   selectedTask: TaskDataType | null; // Store the currently selected task
   selectedTasks: TaskDataType[]; // Array of selected tasks
+  selectedCategory?: string; // Array of selected tasks
+  filteredTasks?: TaskDataType[]; // Array of selected tasks
   setTasks: (tasks_: TaskDataType[]) => void; // Load all tasks
   toggleTaskSelection: (id: number) => void; // Add or remove a task from the selection
+  toggleCategory: (category: string) => void 
   clearTaskSelection: () => void; // Clear all selected tasks
   selectTask: (id: number) => void; // Select a specific task by ID
   submitTask: () => void; // Mark the selected task as submitted
@@ -21,6 +24,7 @@ export const useTaskStore = create<TaskState>()(
   persist(
     (set) => ({
       tasks_: tasks, // Initialize tasks
+      filteredTasks: tasks, // Initialize filteredtasks
       selectedTask: null, // No task selected by default
       selectedTasks: [], // Array of selected tasks
 
@@ -55,6 +59,37 @@ export const useTaskStore = create<TaskState>()(
           return { tasks_: updatedTasks, selectedTasks: updatedSelectedTasks };
         }),
 
+      // Fetch tasks from server
+      setTasksFromServer: async () => {
+        try {
+          const response = await fetch('/api/tasks'); // Replace with your API endpoint
+          if (!response.ok) {
+            throw new Error('Failed to fetch tasks');
+          }
+          const tasks: TaskDataType[] = await response.json();
+          set({
+            tasks_: tasks.map((task) => ({
+              ...task,
+              isSelected: false, // Ensure a clean slate for selections
+            })),
+            filteredTasks: tasks, // Sync filtered tasks with the fetched tasks
+          });
+        } catch (error) {
+          console.error('Error fetching tasks:', error);
+        }
+      },
+
+      // Add or remove a task from the selection
+      toggleCategory: (category: string) =>
+        set((state) => {
+          let updatedSelectedTasks = state?.tasks_?.filter((task) => task?.taskStatus === category);
+          if (category === "Toutes") {
+            updatedSelectedTasks = state?.tasks_
+          }
+          console.log(updatedSelectedTasks, "jjjjjjjjjj"); 
+          return { ...state, filteredTasks: updatedSelectedTasks, selectedCategory: category };
+        }),
+
       // Clear all selected tasks
       clearTaskSelection: () =>
         set((state) => ({
@@ -83,7 +118,14 @@ export const useTaskStore = create<TaskState>()(
     }),
     {
       name: 'task-store', // Name for localStorage key
-      partialize: (state) => ({ tasks_: state.tasks_, selectedTasks: state.selectedTasks }), // Only persist relevant state
+      partialize: (state) => ({ 
+        // tasks_: state.tasks_, 
+        // selectedTasks: state.selectedTasks 
+        tasks_: state.tasks_,
+        selectedTasks: state.selectedTasks,
+        selectedCategory: state.selectedCategory,
+        filteredTasks: state.filteredTasks,
+      }), // Only persist relevant state
     }
   )
 );

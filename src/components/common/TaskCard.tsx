@@ -16,7 +16,7 @@ const TaskCardStyled: React.FC<TaskCardType> = ({ task }) => {
 
   const router = useRouter ()
 
-  const { tasks_, toggleTaskSelection, selectTask,  } = useTaskStore();
+  const { toggleCategory, toggleTaskSelection, selectTask,  } = useTaskStore();
 
   return (
     <>
